@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Markdown的使用</title>
+    <url>/2024/02/03/Markdowm%E7%9A%84%E5%9F%BA%E7%A1%80%E7%94%A8%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="Markdown的使用"><a href="#Markdown的使用" class="headerlink" title="Markdown的使用"></a>Markdown的使用</h1><blockquote>
+<p>Markdown是一种轻量级的「标记语言」，简单的学习了解一下它的语法。</p>
+</blockquote>
+<h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h2><blockquote>
+<p>不同数量的<code>#</code>可以完成不同的标题，如下：  </p>
+</blockquote>
+<p>输入：  </p>
+<p><code>#</code> 一级标题</p>
+<p><code>##</code> 二级标题</p>
+<p><code>###</code> 三级标题</p>
+<p>…</p>
+<p>效果：</p>
+<h3 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h3><h4 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h4><h5 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h5><h2 id="2-字体样式"><a href="#2-字体样式" class="headerlink" title="2. 字体样式"></a>2. 字体样式</h2><blockquote>
+<p>在需要加粗的文本前后添加<code>**</code>,要斜体的文本前后添加<code>_</code>或一个<code>*</code>  ,需要使用删除线时，在需要删除的文件两边加<code>~~</code>,如下</p>
+</blockquote>
+<p><code>**</code>这个是粗体<code>**</code> </p>
+<p><strong>这个是粗体</strong></p>
+<p><code>*</code>这个是斜体<code>*</code> </p>
+<p><em>这个是斜体</em></p>
+<blockquote>
+<p>他们Like加法</p>
+</blockquote>
+<p><code>***</code>粗加斜体 <code>***</code> <code>_**</code>粗加斜体<code>**_</code></p>
+<p><em><strong>粗加斜体</strong></em></p>
+<p><code>~~</code>删除线<code>~~</code></p>
+<p><del>删除线</del></p>
+<p>注：如果想给字体换颜色、字体或者居中显示，需要使用内嵌HTML来实现。</p>
+<h2 id="3-列表"><a href="#3-列表" class="headerlink" title="3 列表"></a>3 列表</h2><h3 id="3-1-无序列表"><a href="#3-1-无序列表" class="headerlink" title="3.1 无序列表"></a>3.1 无序列表</h3><blockquote>
+<p>无序列表的使用，在符号<code>-</code>后加空格使用。如下：</p>
+</blockquote>
+<p><code>-</code>无序列表 1</p>
+<p><code>-</code>无序列表 2</p>
+<p><code>-</code>无序列表 3</p>
+<ul>
+<li>无序列表 1</li>
+<li>无序列表 2</li>
+<li>无序列表 3</li>
+</ul>
+<blockquote>
+<p>如果要控制列表的层级，则需要在符号<code>-</code>前使用空格。如下：</p>
+</blockquote>
+<p><code>-</code> 无序列表 1</p>
+<p><code>-</code> 无序列表 2</p>
+<p> $~~~$<code>-</code> 无序列表 2.1</p>
+<p> $~~~$<code>-</code>无序列表 2.2</p>
+<ul>
+<li>无序列表 1</li>
+<li>无序列表 2<ul>
+<li>无序列表 2.1</li>
+<li>无序列表 2.2</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-2-有序列表"><a href="#3-2-有序列表" class="headerlink" title="3.2 有序列表"></a>3.2 有序列表</h3><blockquote>
+<p>有序列表的使用，在数字及符号<code>.</code>后加空格后输入内容，数字会自动编号，如下：</p>
+</blockquote>
+<p>1<code>. </code>有序列表 1</p>
+<p>1<code>. </code>有序列表 2</p>
+<p>3<code>. </code>有序列表 3</p>
+<ol>
+<li>有序列表 1</li>
+<li>有序列表 2</li>
+<li>有序列表 3</li>
+</ol>
+<h2 id="4-引用"><a href="#4-引用" class="headerlink" title="4. 引用"></a>4. 引用</h2><p>引用的格式是在符号<code>&gt;</code>后面书写文字。如下：</p>
+<p><code>&gt; </code>初学Markdown</p>
+<blockquote>
+<p>初学Markdown</p>
+</blockquote>
+<h2 id="5-链接"><a href="#5-链接" class="headerlink" title="5. 链接"></a>5. 链接</h2><blockquote>
+<p>用法显而易见</p>
+</blockquote>
+<p>   <code>[</code>我的b站<code>](https://space.bilibili.com/1076101780?spm_id_from=333.1007.0.0)</code></p>
+<p>  <a href="https://space.bilibili.com/1076101780?spm_id_from=333.1007.0.0">我的b站</a></p>
+<h2 id="6-图片"><a href="#6-图片" class="headerlink" title="6.  图片"></a>6.  图片</h2><p>插入图片，格式如下：</p>
+<p><code>![</code>这里写图片描述<code>](https....)</code></p>
+<p><img src="https://pic.imgdb.cn/item/65be14d5871b83018a6f8a17.jpg" alt="alt text"></p>
+<p><img src="https://pic.imgdb.cn/item/65be14ee871b83018a6fe016.png" alt="alt text"></p>
+<h2 id="7-分割线"><a href="#7-分割线" class="headerlink" title="7. 分割线"></a>7. 分割线</h2><p>可以在一行中用三个以上的减号来建立一个分隔线，同时需要在分隔线的上面空一行。如下：</p>
+<hr>
+<h2 id="8-表格"><a href="#8-表格" class="headerlink" title="8. 表格"></a>8. 表格</h2><p>可以使用冒号来定义表格的对齐方式，如下：</p>
+<p><code>| 姓名   | 年龄 |     工作 |</code></p>
+<p><code>| :----- | :--: | -------: |</code></p>
+<p><code>| 无敌大青蛙 |  18  | 写代码 |</code></p>
+<p><code>| hahlol |  20  | 还是写代码 |</code></p>
+<p><code>| chen |  22  | 游戏开发 |</code></p>
+<table>
+<thead>
+<tr>
+<th align="left">姓名</th>
+<th align="center">年龄</th>
+<th align="right">工作</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">无敌大青蛙</td>
+<td align="center">18</td>
+<td align="right">吃可爱多</td>
+</tr>
+<tr>
+<td align="left">hahlol</td>
+<td align="center">20</td>
+<td align="right">爬棵勇敢树</td>
+</tr>
+<tr>
+<td align="left">chen</td>
+<td align="center">22</td>
+<td align="right">看一本机智书</td>
+</tr>
+</tbody></table>
+<h2 id="9-关于公式"><a href="#9-关于公式" class="headerlink" title="9. 关于公式"></a>9. 关于公式</h2><blockquote>
+<p>通过<code>$$</code>,在其中其中输入对应数学公式</p>
+</blockquote>
+<p><code>$$</code><br><code>\lim_&#123;x \to \infin&#125;\frac&#123;sin(t)&#125;&#123;x-1&#125;</code><br><code>$$</code></p>
+<p>效果如下：</p>
+<p>$$<br>输入对应公式：\lim_{x \to \infin}\frac{sin(t)}{x-1}<br>$$</p>
+<blockquote>
+<p>通过单个<code>$</code>,可在文字中插入数学公式</p>
+</blockquote>
+<p>文字中插 <code>$\lim_&#123;x \to\infin&#125;F(x)$</code>一段公式。</p>
+<p>文字中插 $\lim_{x \to\infin}F(x)$一段公式。</p>
+<h2 id="9-code"><a href="#9-code" class="headerlink" title="9. code"></a>9. code</h2><blockquote>
+<p>输入&#96;&#96;&#96;加对应语言 </p>
+</blockquote>
+<blockquote>
+<p>末尾&#96;&#96;&#96; 结束</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">//```C#</span></span><br><span class="line">debug.<span class="built_in">log</span>(<span class="string">&quot;Hello World !&quot;</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//```C++</span></span><br><span class="line"> cout&lt;&lt; <span class="string">&quot;Hello World !&quot;</span> &lt;&lt;endl;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2024/02/02/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>beginer</title>
+    <url>/2024/02/03/beginer/</url>
+    <content><![CDATA[<h1 id="Markdown的使用"><a href="#Markdown的使用" class="headerlink" title="Markdown的使用"></a>Markdown的使用</h1><blockquote>
+<p>Markdown是一种轻量级的「标记语言」，简单的学习了解一下它的语法。</p>
+</blockquote>
+<h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h2><blockquote>
+<p>不同数量的<code>#</code>可以完成不同的标题，如下：  </p>
+</blockquote>
+<p>输入：  </p>
+<p><code>#</code> 一级标题</p>
+<p><code>##</code> 二级标题</p>
+<p><code>###</code> 三级标题</p>
+<p>…</p>
+<p>效果：</p>
+<h3 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h3><h4 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h4><h5 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h5><h2 id="2-字体样式"><a href="#2-字体样式" class="headerlink" title="2. 字体样式"></a>2. 字体样式</h2><blockquote>
+<p>在需要加粗的文本前后添加<code>**</code>,要斜体的文本前后添加<code>_</code>或一个<code>*</code>  ,需要使用删除线时，在需要删除的文件两边加<code>~~</code>,如下</p>
+</blockquote>
+<p><code>**</code>这个是粗体<code>**</code> </p>
+<p><strong>这个是粗体</strong></p>
+<p><code>*</code>这个是斜体<code>*</code> </p>
+<p><em>这个是斜体</em></p>
+<blockquote>
+<p>他们Like加法</p>
+</blockquote>
+<p><code>***</code>粗加斜体 <code>***</code> <code>_**</code>粗加斜体<code>**_</code></p>
+<p><em><strong>粗加斜体</strong></em></p>
+<p><code>~~</code>删除线<code>~~</code></p>
+<p><del>删除线</del></p>
+<p>注：如果想给字体换颜色、字体或者居中显示，需要使用内嵌HTML来实现。</p>
+<h2 id="3-列表"><a href="#3-列表" class="headerlink" title="3 列表"></a>3 列表</h2><h3 id="3-1-无序列表"><a href="#3-1-无序列表" class="headerlink" title="3.1 无序列表"></a>3.1 无序列表</h3><blockquote>
+<p>无序列表的使用，在符号<code>-</code>后加空格使用。如下：</p>
+</blockquote>
+<p><code>-</code>无序列表 1</p>
+<p><code>-</code>无序列表 2</p>
+<p><code>-</code>无序列表 3</p>
+<ul>
+<li>无序列表 1</li>
+<li>无序列表 2</li>
+<li>无序列表 3</li>
+</ul>
+<blockquote>
+<p>如果要控制列表的层级，则需要在符号<code>-</code>前使用空格。如下：</p>
+</blockquote>
+<p><code>-</code> 无序列表 1</p>
+<p><code>-</code> 无序列表 2</p>
+<p> $~~~$<code>-</code> 无序列表 2.1</p>
+<p> $~~~$<code>-</code>无序列表 2.2</p>
+<ul>
+<li>无序列表 1</li>
+<li>无序列表 2<ul>
+<li>无序列表 2.1</li>
+<li>无序列表 2.2</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-2-有序列表"><a href="#3-2-有序列表" class="headerlink" title="3.2 有序列表"></a>3.2 有序列表</h3><blockquote>
+<p>有序列表的使用，在数字及符号<code>.</code>后加空格后输入内容，数字会自动编号，如下：</p>
+</blockquote>
+<p>1<code>. </code>有序列表 1</p>
+<p>1<code>. </code>有序列表 2</p>
+<p>3<code>. </code>有序列表 3</p>
+<ol>
+<li>有序列表 1</li>
+<li>有序列表 2</li>
+<li>有序列表 3</li>
+</ol>
+<h2 id="4-引用"><a href="#4-引用" class="headerlink" title="4. 引用"></a>4. 引用</h2><p>引用的格式是在符号<code>&gt;</code>后面书写文字。如下：</p>
+<p><code>&gt; </code>初学Markdown</p>
+<blockquote>
+<p>初学Markdown</p>
+</blockquote>
+<h2 id="5-链接"><a href="#5-链接" class="headerlink" title="5. 链接"></a>5. 链接</h2><blockquote>
+<p>用法显而易见</p>
+</blockquote>
+<p>   <code>[</code>我的b站<code>](https://space.bilibili.com/1076101780?spm_id_from=333.1007.0.0)</code></p>
+<p>  <a href="https://space.bilibili.com/1076101780?spm_id_from=333.1007.0.0">我的b站</a></p>
+<h2 id="6-图片"><a href="#6-图片" class="headerlink" title="6.  图片"></a>6.  图片</h2><p>插入图片，格式如下：</p>
+<p><code>![</code>这里写图片描述<code>](https....)</code></p>
+<p><img src="/image/image.png" alt="alt text"></p>
+<p><img src="/image/mmexport1706713109386.png" alt="alt text"></p>
+<h2 id="7-分割线"><a href="#7-分割线" class="headerlink" title="7. 分割线"></a>7. 分割线</h2><p>可以在一行中用三个以上的减号来建立一个分隔线，同时需要在分隔线的上面空一行。如下：</p>
+<hr>
+<h2 id="8-表格"><a href="#8-表格" class="headerlink" title="8. 表格"></a>8. 表格</h2><p>可以使用冒号来定义表格的对齐方式，如下：</p>
+<p><code>| 姓名   | 年龄 |     工作 |</code></p>
+<p><code>| :----- | :--: | -------: |</code></p>
+<p><code>| 无敌大青蛙 |  18  | 写代码 |</code></p>
+<p><code>| hahlol |  20  | 还是写代码 |</code></p>
+<p><code>| chen |  22  | 游戏开发 |</code></p>
+<table>
+<thead>
+<tr>
+<th align="left">姓名</th>
+<th align="center">年龄</th>
+<th align="right">工作</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">无敌大青蛙</td>
+<td align="center">18</td>
+<td align="right">吃可爱多</td>
+</tr>
+<tr>
+<td align="left">hahlol</td>
+<td align="center">20</td>
+<td align="right">爬棵勇敢树</td>
+</tr>
+<tr>
+<td align="left">chen</td>
+<td align="center">22</td>
+<td align="right">看一本机智书</td>
+</tr>
+</tbody></table>
+<h2 id="9-关于公式"><a href="#9-关于公式" class="headerlink" title="9. 关于公式"></a>9. 关于公式</h2><blockquote>
+<p>通过<code>$$</code>,在其中其中输入对应数学公式</p>
+</blockquote>
+<p><code>$$</code><br><code>\lim_&#123;x \to \infin&#125;\frac&#123;sin(t)&#125;&#123;x-1&#125;</code><br><code>$$</code></p>
+<p>效果如下：</p>
+<p>$$<br>输入对应公式：\lim_{x \to \infin}\frac{sin(t)}{x-1}<br>$$</p>
+<blockquote>
+<p>通过单个<code>$</code>,可在文字中插入数学公式</p>
+</blockquote>
+<p>文字中插 <code>$\lim_&#123;x \to\infin&#125;F(x)$</code>一段公式。</p>
+<p>文字中插 $\lim_{x \to\infin}F(x)$一段公式。</p>
+<h2 id="9-code"><a href="#9-code" class="headerlink" title="9. code"></a>9. code</h2><blockquote>
+<p>输入&#96;&#96;&#96;加对应语言 </p>
+</blockquote>
+<blockquote>
+<p>末尾&#96;&#96;&#96; 结束</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">//```C#</span></span><br><span class="line">debug.<span class="built_in">log</span>(<span class="string">&quot;Hello World !&quot;</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//```C++</span></span><br><span class="line"> cout&lt;&lt; <span class="string">&quot;Hello World !&quot;</span> &lt;&lt;endl;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>第一篇文章</title>
+    <url>/2024/02/02/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<h3 id="三个"><a href="#三个" class="headerlink" title="三个#"></a>三个#</h3>]]></content>
+  </entry>
+</search>
