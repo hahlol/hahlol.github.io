@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="数据结构（C++）, hahlol蛙">
+    <meta name="keywords" content="数据结构（C++）第一节, hahlol蛙">
     <meta name="description" content="重生之（重新）学习数据结构–第一天
 嘿嘿，大学数据结构课程没有好好学习，对数据结构的印象感到模糊，当时也只为了应付考试，虽然考的不错，但感觉很多纰漏，打算用C++重头来过，每一次的重新学习，相信都会有新的感悟。
 
@@ -20,7 +20,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>数据结构（C++） | hahlol蛙</title>
+    <title>数据结构（C++）第一节 | hahlol蛙</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -337,12 +337,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">数据结构（C++）</h1>
+                    <h1 class="description center-align post-title">数据结构（C++）第一节</h1>
                 </div>
             </div>
         </div>
@@ -368,6 +368,10 @@
                         
                             <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
                                 <span class="chip bg-color">数据结构</span>
+                            </a>
+                        
+                            <a href="/tags/C/">
+                                <span class="chip bg-color">C++</span>
                             </a>
                         
                     </div>
@@ -454,6 +458,17 @@
 </blockquote>
 <p> T(n)就是语句总执行次数，随n变化。<br> f(n)就是关于n的函数</p>
 <p> 在上面的例子中<br> 函数分别是一个一次，二次，三次函数</p>
+<p> <img src="/%5Cmedias%5Cimages%5CThreeFx.png" alt="three fx" title="three fx"></p>
+<p>可以观察到，大O的表示法对其做了简化，这是用了高阶无穷小。</p>
+<ul>
+<li>f（n）&#x3D; n(n-1)&#x2F;2</li>
+</ul>
+<p>对于它来说 一部分就是n^2，一部分n，比较起来是小巫见大巫。</p>
+<p>  所以他的复杂度 T（n） &#x3D; O（f（n））</p>
+<p>   &#x3D;o((n^2)&#x2F;2 - n&#x2F;2)</p>
+<p>   &#x3D;O（n^2）</p>
+<p>我们通常定一个标准，时间复杂度的大小尽量不超过10^6.</p>
+<p>所以 <img src="/%7BC9B7F1E3-B63F-4158-A6FE-EE40A040CDA5%7D.png" alt="alt text"></p>
 
                 
             </div>
@@ -480,7 +495,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://hahlol.github.io/2024/02/03/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88C-%EF%BC%89/">http://hahlol.github.io/2024/02/03/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88C-%EF%BC%89/</a>
+                    <a href="http://hahlol.github.io/2024/02/03/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88C-%EF%BC%89%E7%AC%AC%E4%B8%80%E8%8A%82/">http://hahlol.github.io/2024/02/03/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88C-%EF%BC%89%E7%AC%AC%E4%B8%80%E8%8A%82/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -522,6 +537,10 @@
                                     <span class="chip bg-color">数据结构</span>
                                 </a>
                             
+                                <a href="/tags/C/">
+                                    <span class="chip bg-color">C++</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -559,7 +578,7 @@
                         <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                        <img src="/medias/reward/wechat.jpg" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -808,60 +827,6 @@
 
     <footer class="page-footer bg-color">
     
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="tencent"
-                   type="playlist"
-                   id="8849699710"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='false'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="/libs/aplayer/Meting.min.js"></script>
-
-    
 
     <div class="container row center-align"
          style="margin-bottom: 0px !important;">
@@ -900,7 +865,7 @@
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <a href="https://github.com/hahlol" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
 

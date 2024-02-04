@@ -4,8 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="第一篇文章, hahlol蛙">
-    <meta name="description" content="三个#">
+    <meta name="keywords" content="数据结构（C++）第二节, hahlol蛙">
+    <meta name="description" content="顺序表
+定义：把逻辑上相邻的结点储存在物理位置上的相邻储存单元中，结点的逻辑关系由储存单元的邻接关系来体现.
+
+通俗来讲，顺序表就是把线性表中的所有元素按照其逻辑顺序，依次储存到从指定的储存位置开始的一块连续的储存空间中。第一个元素的储存位">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +20,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>第一篇文章 | hahlol蛙</title>
+    <title>数据结构（C++）第二节 | hahlol蛙</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -334,12 +337,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">第一篇文章</h1>
+                    <h1 class="description center-align post-title">数据结构（C++）第二节</h1>
                 </div>
             </div>
         </div>
@@ -361,12 +364,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+                                <span class="chip bg-color">数据结构</span>
+                            </a>
+                        
+                            <a href="/tags/C/">
+                                <span class="chip bg-color">C++</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E9%87%8D%E5%AD%A6%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="post-category">
+                                重学数据结构
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -375,7 +395,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-02-02
+                    2024-02-04
                 </div>
                 
 
@@ -396,7 +416,33 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="三个"><a href="#三个" class="headerlink" title="三个#"></a>三个#</h3>
+                <h1 id="顺序表"><a href="#顺序表" class="headerlink" title="顺序表"></a>顺序表</h1><blockquote>
+<p>定义：把逻辑上相邻的结点储存在物理位置上的相邻储存单元中，结点的逻辑关系由储存单元的邻接关系来体现.</p>
+</blockquote>
+<p>通俗来讲，顺序表就是把线性表中的所有元素按照其逻辑顺序，依次储存到从指定的储存位置开始的一块连续的储存空间中。第一个元素的储存位置就是指定的储存位置，第 i+1 个元素的储存位置在第 i 个元素后面</p>
+<p> 上面的都不重要，既然是重新学习，我们知道无非是些增删改查之类，接下来用C++写一个自己的顺序表。</p>
+<h2 id="顺序表代码的实现"><a href="#顺序表代码的实现" class="headerlink" title="顺序表代码的实现"></a>顺序表代码的实现</h2><p>一步一步来很容易</p>
+<h3 id="先定义和初始化"><a href="#先定义和初始化" class="headerlink" title="先定义和初始化"></a>先定义和初始化</h3> <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> eleType int</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">SequentialList</span></span><br><span class="line">&#123;</span><br><span class="line">    eleType* elements;</span><br><span class="line">    <span class="type">int</span> size;<span class="comment">//顺序表大小</span></span><br><span class="line">    <span class="type">int</span> capacity;<span class="comment">//最大容量</span></span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//初始化</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">initializeList</span><span class="params">(SequentialList *list, <span class="type">int</span> capacity)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    list-&gt;elements = <span class="keyword">new</span> eleType[capacity];</span><br><span class="line">    list-&gt;size = <span class="number">0</span>;</span><br><span class="line">    list-&gt;capacity = capacity;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="顺序表的删除，长度的判断，判空"><a href="#顺序表的删除，长度的判断，判空" class="headerlink" title="顺序表的删除，长度的判断，判空"></a>顺序表的删除，长度的判断，判空</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">destroyList</span><span class="params">(SequentialList *list)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">delete</span>[] list-&gt;elements;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">size</span><span class="params">(SequentialList *list)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> list-&gt;size;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">isEmpty</span><span class="params">(SequentialList *list)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> list-&gt;size == <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="顺序表的的插入"><a href="#顺序表的的插入" class="headerlink" title="顺序表的的插入"></a>顺序表的的插入</h3><p>这里比较复杂</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">insert</span><span class="params">(SequentialList *list, <span class="type">int</span> index, eleType element)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//首先我们判断插入位置是不是存在，不存在报错</span></span><br><span class="line">    <span class="keyword">if</span> (index &lt; <span class="number">0</span> || index &gt; list-&gt;size)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">throw</span> std::<span class="built_in">invalid_argument</span>(<span class="string">&quot;Invalid index&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//接下来考虑，顺序表中的空间还够用吗，如果不够需要扩容，就是增大capacity，当ist-&gt;size == list-&gt;capacity时，发现需要扩容。</span></span><br><span class="line">    <span class="keyword">if</span> (list-&gt;size == list-&gt;capacity)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">//定义一个新的存储大小和新的数组</span></span><br><span class="line">        <span class="type">int</span> newCapacity = list-&gt;capacity * <span class="number">2</span>;</span><br><span class="line">        eleType* newElements = <span class="keyword">new</span> eleType[newCapacity];</span><br><span class="line">        <span class="comment">//把之前顺序表中的数据遍历到新的顺序表中</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; list-&gt;size; ++i)</span><br><span class="line">        &#123;</span><br><span class="line">            newElements[i] = list-&gt;elements[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//删除旧的顺序表，释放内存空间</span></span><br><span class="line">        <span class="keyword">delete</span>[] list-&gt;elements;</span><br><span class="line">        <span class="comment">//再把它指向新的内存空间，也就是新的数据表</span></span><br><span class="line">        list-&gt;elements = newElements;</span><br><span class="line">        list-&gt;capacity = newCapacity;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//接下来插入新的元素</span></span><br><span class="line">    <span class="comment">//先把插入位置的元素和后面的元素都往后推一位</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = list-&gt;size; i &gt; index; --i)</span><br><span class="line">    &#123;</span><br><span class="line">        list-&gt;elements[i] = list-&gt;elements[i - <span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//插入</span></span><br><span class="line">    list-&gt;elements[index] = element;</span><br><span class="line">    list-&gt;size++;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="删除顺序表中下表为index的数"><a href="#删除顺序表中下表为index的数" class="headerlink" title="删除顺序表中下表为index的数"></a>删除顺序表中下表为index的数</h3><pre><code class="c++">
+void deleteElement(SequentialList *list, int index)
+&#123;
+    //和之前一样判断index存不存在 这里index 不能等于 list-size |例如：list-&gt;size 是3 ；index只能为 0 1 2 
+    if (index &lt; 0 || index &gt;= list-&gt;size)
+    &#123;
+        throw std::invalid_argument(&quot;Invalid index&quot;);
+    &#125;
+    for (int i = index; i &lt; list-&gt;size - 1; ++i)
+    &#123;
+        list-&gt;elements[i] = list-&gt;elements[i + 1];
+    &#125;
+    list-&gt;size--;
+&#125;
+</code></pre>
+
                 
             </div>
             <hr/>
@@ -422,7 +468,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://hahlol.github.io/2024/02/02/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">http://hahlol.github.io/2024/02/02/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</a>
+                    <a href="http://hahlol.github.io/2024/02/04/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88C-%EF%BC%89%E7%AC%AC%E4%BA%8C%E5%A4%A9/">http://hahlol.github.io/2024/02/04/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88C-%EF%BC%89%E7%AC%AC%E4%BA%8C%E5%A4%A9/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -459,7 +505,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+                                    <span class="chip bg-color">数据结构</span>
+                                </a>
+                            
+                                <a href="/tags/C/">
+                                    <span class="chip bg-color">C++</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -536,62 +590,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2024/02/03/Markdowm%E7%9A%84%E5%9F%BA%E7%A1%80%E7%94%A8%E6%B3%95/">
+                <a href="/2024/02/04/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88C-%EF%BC%89%E7%AC%AC%E4%BA%8C%E5%A4%A9/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Markdown的使用">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="数据结构（C++）第二节">
                         
-                        <span class="card-title">Markdown的使用</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-02-03
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            Li ChenYang
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/markdown/">
-                        <span class="chip bg-color">markdown</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2024/02/02/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="第一篇文章">
-                        
-                        <span class="card-title">第一篇文章</span>
+                        <span class="card-title">数据结构（C++）第二节</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -602,17 +612,82 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-02-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-02-04
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Li ChenYang
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E9%87%8D%E5%AD%A6%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="post-category">
+                                    重学数据结构
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+                        <span class="chip bg-color">数据结构</span>
+                    </a>
+                    
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C++</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2024/02/04/blog%E7%9A%84%E6%90%AD%E5%BB%BA/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="blog的搭建">
+                        
+                        <span class="card-title">blog的搭建</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-02-04
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/blog/" class="post-category">
+                                    blog
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/blog/">
+                        <span class="chip bg-color">blog</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>

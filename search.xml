@@ -78,9 +78,18 @@
 <p>   <code>[</code>我的b站<code>](https://space.bilibili.com/1076101780?spm_id_from=333.1007.0.0)</code></p>
 <p>  <a href="https://space.bilibili.com/1076101780?spm_id_from=333.1007.0.0">我的b站</a></p>
 <h2 id="6-图片"><a href="#6-图片" class="headerlink" title="6.  图片"></a>6.  图片</h2><p>插入图片，格式如下：</p>
+<p>这是图床的新式</p>
 <p><code>![</code>这里写图片描述<code>](https....)</code></p>
 <p><img src="https://pic.imgdb.cn/item/65be14d5871b83018a6f8a17.jpg" alt="alt text"></p>
 <p><img src="https://pic.imgdb.cn/item/65be14ee871b83018a6fe016.png" alt="alt text"></p>
+<p>如果想在本地插入图片</p>
+<p>   <code>![alt text](link &quot;optional title&quot;)</code></p>
+<pre><code>alt text：图片的Alternative文本，用来描述图片的关键词，可以不写。最初的本意是当图片因为某种原因不能被显示时而出现的替代文字，后来又被用于SEO，可以方便搜索引擎根据Alt text里面的关键词搜索到图片。 
+
+link：可以是图片的本地地址、网址。
+
+&quot;optional title&quot;：鼠标悬置于图片上会出现的标题文字，可以不写。
+</code></pre>
 <h2 id="7-分割线"><a href="#7-分割线" class="headerlink" title="7. 分割线"></a>7. 分割线</h2><p>可以在一行中用三个以上的减号来建立一个分隔线，同时需要在分隔线的上面空一行。如下：</p>
 <hr>
 <h2 id="8-表格"><a href="#8-表格" class="headerlink" title="8. 表格"></a>8. 表格</h2><p>可以使用冒号来定义表格的对齐方式，如下：</p>
@@ -150,8 +159,13 @@
       </tags>
   </entry>
   <entry>
-    <title>数据结构（C++）</title>
-    <url>/2024/02/03/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88C-%EF%BC%89/</url>
+    <title>第一篇文章</title>
+    <url>/2024/02/02/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<h3 id="三个"><a href="#三个" class="headerlink" title="三个#"></a>三个#</h3>]]></content>
+  </entry>
+  <entry>
+    <title>数据结构（C++）第一节</title>
+    <url>/2024/02/03/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88C-%EF%BC%89%E7%AC%AC%E4%B8%80%E8%8A%82/</url>
     <content><![CDATA[<h1 id="重生之（重新）学习数据结构–第一天"><a href="#重生之（重新）学习数据结构–第一天" class="headerlink" title="重生之（重新）学习数据结构–第一天"></a>重生之（重新）学习数据结构–第一天</h1><blockquote>
 <p>嘿嘿，大学数据结构课程没有好好学习，对数据结构的印象感到模糊，当时也只为了应付考试，虽然考的不错，但感觉很多纰漏，打算用C++重头来过，每一次的重新学习，相信都会有新的感悟。</p>
 </blockquote>
@@ -194,17 +208,62 @@
 </blockquote>
 <p> T(n)就是语句总执行次数，随n变化。<br> f(n)就是关于n的函数</p>
 <p> 在上面的例子中<br> 函数分别是一个一次，二次，三次函数</p>
+<p> <img src="/%5Cmedias%5Cimages%5CThreeFx.png" alt="three fx" title="three fx"></p>
+<p>可以观察到，大O的表示法对其做了简化，这是用了高阶无穷小。</p>
+<ul>
+<li>f（n）&#x3D; n(n-1)&#x2F;2</li>
+</ul>
+<p>对于它来说 一部分就是n^2，一部分n，比较起来是小巫见大巫。</p>
+<p>  所以他的复杂度 T（n） &#x3D; O（f（n））</p>
+<p>   &#x3D;o((n^2)&#x2F;2 - n&#x2F;2)</p>
+<p>   &#x3D;O（n^2）</p>
+<p>我们通常定一个标准，时间复杂度的大小尽量不超过10^6.</p>
+<p>所以 <img src="/%7BC9B7F1E3-B63F-4158-A6FE-EE40A040CDA5%7D.png" alt="alt text"></p>
 ]]></content>
       <categories>
         <category>重学数据结构</category>
       </categories>
       <tags>
         <tag>数据结构</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
-    <title>第一篇文章</title>
-    <url>/2024/02/02/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<h3 id="三个"><a href="#三个" class="headerlink" title="三个#"></a>三个#</h3>]]></content>
+    <title>数据结构（C++）第二节</title>
+    <url>/2024/02/04/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88C-%EF%BC%89%E7%AC%AC%E4%BA%8C%E5%A4%A9/</url>
+    <content><![CDATA[<h1 id="顺序表"><a href="#顺序表" class="headerlink" title="顺序表"></a>顺序表</h1><blockquote>
+<p>定义：把逻辑上相邻的结点储存在物理位置上的相邻储存单元中，结点的逻辑关系由储存单元的邻接关系来体现.</p>
+</blockquote>
+<p>通俗来讲，顺序表就是把线性表中的所有元素按照其逻辑顺序，依次储存到从指定的储存位置开始的一块连续的储存空间中。第一个元素的储存位置就是指定的储存位置，第 i+1 个元素的储存位置在第 i 个元素后面</p>
+<p> 上面的都不重要，既然是重新学习，我们知道无非是些增删改查之类，接下来用C++写一个自己的顺序表。</p>
+<h2 id="顺序表代码的实现"><a href="#顺序表代码的实现" class="headerlink" title="顺序表代码的实现"></a>顺序表代码的实现</h2><p>一步一步来很容易</p>
+<h3 id="先定义和初始化"><a href="#先定义和初始化" class="headerlink" title="先定义和初始化"></a>先定义和初始化</h3> <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> eleType int</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">SequentialList</span></span><br><span class="line">&#123;</span><br><span class="line">    eleType* elements;</span><br><span class="line">    <span class="type">int</span> size;<span class="comment">//顺序表大小</span></span><br><span class="line">    <span class="type">int</span> capacity;<span class="comment">//最大容量</span></span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//初始化</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">initializeList</span><span class="params">(SequentialList *list, <span class="type">int</span> capacity)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    list-&gt;elements = <span class="keyword">new</span> eleType[capacity];</span><br><span class="line">    list-&gt;size = <span class="number">0</span>;</span><br><span class="line">    list-&gt;capacity = capacity;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="顺序表的删除，长度的判断，判空"><a href="#顺序表的删除，长度的判断，判空" class="headerlink" title="顺序表的删除，长度的判断，判空"></a>顺序表的删除，长度的判断，判空</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">destroyList</span><span class="params">(SequentialList *list)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">delete</span>[] list-&gt;elements;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">size</span><span class="params">(SequentialList *list)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> list-&gt;size;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">isEmpty</span><span class="params">(SequentialList *list)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> list-&gt;size == <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="顺序表的的插入"><a href="#顺序表的的插入" class="headerlink" title="顺序表的的插入"></a>顺序表的的插入</h3><p>这里比较复杂</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">insert</span><span class="params">(SequentialList *list, <span class="type">int</span> index, eleType element)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//首先我们判断插入位置是不是存在，不存在报错</span></span><br><span class="line">    <span class="keyword">if</span> (index &lt; <span class="number">0</span> || index &gt; list-&gt;size)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">throw</span> std::<span class="built_in">invalid_argument</span>(<span class="string">&quot;Invalid index&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//接下来考虑，顺序表中的空间还够用吗，如果不够需要扩容，就是增大capacity，当ist-&gt;size == list-&gt;capacity时，发现需要扩容。</span></span><br><span class="line">    <span class="keyword">if</span> (list-&gt;size == list-&gt;capacity)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">//定义一个新的存储大小和新的数组</span></span><br><span class="line">        <span class="type">int</span> newCapacity = list-&gt;capacity * <span class="number">2</span>;</span><br><span class="line">        eleType* newElements = <span class="keyword">new</span> eleType[newCapacity];</span><br><span class="line">        <span class="comment">//把之前顺序表中的数据遍历到新的顺序表中</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; list-&gt;size; ++i)</span><br><span class="line">        &#123;</span><br><span class="line">            newElements[i] = list-&gt;elements[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//删除旧的顺序表，释放内存空间</span></span><br><span class="line">        <span class="keyword">delete</span>[] list-&gt;elements;</span><br><span class="line">        <span class="comment">//再把它指向新的内存空间，也就是新的数据表</span></span><br><span class="line">        list-&gt;elements = newElements;</span><br><span class="line">        list-&gt;capacity = newCapacity;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//接下来插入新的元素</span></span><br><span class="line">    <span class="comment">//先把插入位置的元素和后面的元素都往后推一位</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = list-&gt;size; i &gt; index; --i)</span><br><span class="line">    &#123;</span><br><span class="line">        list-&gt;elements[i] = list-&gt;elements[i - <span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//插入</span></span><br><span class="line">    list-&gt;elements[index] = element;</span><br><span class="line">    list-&gt;size++;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="删除顺序表中下表为index的数"><a href="#删除顺序表中下表为index的数" class="headerlink" title="删除顺序表中下表为index的数"></a>删除顺序表中下表为index的数</h3><pre><code class="c++">
+void deleteElement(SequentialList *list, int index)
+&#123;
+    //和之前一样判断index存不存在 这里index 不能等于 list-size |例如：list-&gt;size 是3 ；index只能为 0 1 2 
+    if (index &lt; 0 || index &gt;= list-&gt;size)
+    &#123;
+        throw std::invalid_argument(&quot;Invalid index&quot;);
+    &#125;
+    for (int i = index; i &lt; list-&gt;size - 1; ++i)
+    &#123;
+        list-&gt;elements[i] = list-&gt;elements[i + 1];
+    &#125;
+    list-&gt;size--;
+&#125;
+</code></pre>
+]]></content>
+      <categories>
+        <category>重学数据结构</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+        <tag>C++</tag>
+      </tags>
   </entry>
 </search>
