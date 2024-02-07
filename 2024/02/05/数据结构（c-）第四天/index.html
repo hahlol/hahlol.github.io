@@ -4,11 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="数据结构（c++）第三天, hahlol蛙">
-    <meta name="description" content="重生之（重新）学习数据结构–第三天 之顺序表的实战篇顺序表的实战
-接下来的题目都来在航电官网中的编程题目。
-
-1.求奇数的乘积Time Limit: 2000&amp;#x2F;1000 MS (Java&amp;#x2F;Others)    Memor">
+    <meta name="keywords" content="数据结构（c++）第四天, hahlol蛙">
+    <meta name="description" content="重生之（重新）学习数据结构–第四天 之顺序表-vectorvector 代码 1234567891011121314151617181920212223242526272829303132#include &amp;lt;iostream&amp;gt;#">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>数据结构（c++）第三天 | hahlol蛙</title>
+    <title>数据结构（c++）第四天 | hahlol蛙</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -337,12 +334,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">数据结构（c++）第三天</h1>
+                    <h1 class="description center-align post-title">数据结构（c++）第四天</h1>
                 </div>
             </div>
         </div>
@@ -395,7 +392,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-02-04
+                    2024-02-05
                 </div>
                 
 
@@ -416,43 +413,21 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="重生之（重新）学习数据结构–第三天-之顺序表的实战篇"><a href="#重生之（重新）学习数据结构–第三天-之顺序表的实战篇" class="headerlink" title="重生之（重新）学习数据结构–第三天 之顺序表的实战篇"></a>重生之（重新）学习数据结构–第三天 之顺序表的实战篇</h1><h2 id="顺序表的实战"><a href="#顺序表的实战" class="headerlink" title="顺序表的实战"></a>顺序表的实战</h2><blockquote>
-<p>接下来的题目都来在航电官网中的编程题目。</p>
-</blockquote>
-<h3 id="1-求奇数的乘积"><a href="#1-求奇数的乘积" class="headerlink" title="1.求奇数的乘积"></a>1.求奇数的乘积</h3><p>Time Limit: 2000&#x2F;1000 MS (Java&#x2F;Others)    Memory Limit: 65536&#x2F;32768 K (Java&#x2F;Others)<br>Total Submission(s): 196436    Accepted Submission(s): 115241</p>
-<p><strong>Problem Description</strong><br>给你n个整数，求他们中所有奇数的乘积。</p>
-<p><strong>Input</strong><br>输入数据包含多个测试实例，每个测试实例占一行，每行的第一个数为n，表示本组数据一共有n个，接着是n个整数，你可以假设每组数据必定至少存在一个奇数。</p>
-<p><strong>Output</strong><br>输出每组数中的所有奇数的乘积，对于测试实例，输出一行。</p>
-<p><strong>Sample Input</strong><br>3 1 2 3<br>4 2 3 4 5</p>
-<p><strong>Sample Output</strong><br>3<br>15</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//。。上接上一节自己写的顺序表 main删除</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">  <span class="comment">//我们可以到，每行第一个数字是当前该组元素的个数,每行第一个数字定位n</span></span><br><span class="line">      <span class="type">int</span> n;</span><br><span class="line">      <span class="keyword">while</span>(<span class="built_in">cin</span> &gt;&gt; n)</span><br><span class="line">      &#123;<span class="comment">//创建自己的顺序表</span></span><br><span class="line">          SequentList s;</span><br><span class="line">          initializeList( &amp;s,<span class="number">1</span>);</span><br><span class="line">          <span class="comment">//插入</span></span><br><span class="line">          <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span> ; i &lt; n&gt;; ++i)</span><br><span class="line">          &#123;</span><br><span class="line">              <span class="type">int</span> x;</span><br><span class="line">              <span class="built_in">cin</span> &gt;&gt; x;</span><br><span class="line">              insert(&amp;s,i,x);</span><br><span class="line">          &#125;</span><br><span class="line">          <span class="comment">//s.size == n</span></span><br><span class="line">          <span class="type">int</span> prod = <span class="number">1</span>;</span><br><span class="line">          <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i&lt;s.size;++i)</span><br><span class="line">          &#123;   <span class="comment">//获取元素</span></span><br><span class="line">              <span class="type">int</span> val =(getElement(&amp;s,i));</span><br><span class="line">              <span class="comment">//判奇偶</span></span><br><span class="line">              <span class="keyword">if</span>(val%<span class="number">2</span> == <span class="number">1</span>)&#123;</span><br><span class="line">                  <span class="comment">//这里需要连乘</span></span><br><span class="line">                  prod = prod * val;</span><br><span class="line">              &#125;</span><br><span class="line">          &#125;</span><br><span class="line"></span><br><span class="line">          <span class="built_in">cout</span> &lt;&lt; prod &lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+                <h1 id="重生之（重新）学习数据结构–第四天-之顺序表-vector"><a href="#重生之（重新）学习数据结构–第四天-之顺序表-vector" class="headerlink" title="重生之（重新）学习数据结构–第四天 之顺序表-vector"></a>重生之（重新）学习数据结构–第四天 之顺序表-vector</h1><h2 id="vector-代码"><a href="#vector-代码" class="headerlink" title="vector 代码"></a>vector 代码</h2> <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span> </span></span><br><span class="line">using namespace <span class="built_in">std</span>;</span><br><span class="line"><span class="comment">//vector 向量 模板类 </span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;	</span><br><span class="line">   <span class="comment">// vector&lt;int&gt; ret;//这就相当一个空的顺序表</span></span><br><span class="line">	<span class="built_in">vector</span>&lt;<span class="type">int</span>&gt; ret = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i&lt;ret.size();++i)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; ret[i] &lt;&lt;<span class="string">&#x27; &#x27;</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	</span><br><span class="line">   <span class="built_in">cout</span> &lt;&lt; ret.size() &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">   ret.push_back(<span class="number">1024</span>);<span class="comment">//插入方法</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i&lt;ret.size();++i)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; ret[i] &lt;&lt;<span class="string">&#x27; &#x27;</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; ret.size() &lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;ret[<span class="number">0</span>]&lt;&lt;<span class="built_in">endl</span>;<span class="comment">//得到0位置的值</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	</span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>测试是否正确，在对应<a target="_blank" rel="noopener" href="https://acm.hdu.edu.cn/">航电官网</a>Problem Archive中提交。</p>
-<p>上面代码太多了，正常只需要定义一个大一点的数组</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">  <span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"> <span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    <span class="comment">//n = 0 结束</span></span><br><span class="line">    <span class="keyword">while</span>(cin &gt;&gt; n &amp;&amp; n)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">float</span> f_num = <span class="number">0</span>,zero = <span class="number">0</span>,z_num = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span> ; i &lt; n; ++i)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="type">int</span> x;</span><br><span class="line">                cin &gt;&gt; x;</span><br><span class="line">                <span class="keyword">if</span>(x &lt; <span class="number">0</span>)</span><br><span class="line">                 f_num++;</span><br><span class="line">                <span class="keyword">if</span>(x == <span class="number">0</span>)</span><br><span class="line">                 zero++;</span><br><span class="line">                <span class="keyword">if</span>(x &gt; <span class="number">0</span>)</span><br><span class="line">                 z_num++;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        cout &lt;&lt; f_num &lt;&lt;zero &lt;&lt; z_num &lt;&lt;endl;</span><br><span class="line">        f_num = zero = z_num = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">  </span><br></pre></td></tr></table></figure>
+<h2 id="C-max-element-的使用"><a href="#C-max-element-的使用" class="headerlink" title="C++ max_element()的使用"></a>C++ max_element()的使用</h2><p><strong>C++ max_element()函数的使用</strong><br>max(a,b)，返回a,b两者之间的较大值<br>max_element(r, r+6),返回数组r中[0, 6)之间的最大值的迭代器，<br>使用max_element返回的值减去数组头地址即为该最大值在数组的序号<br>max_element前面加*为返回的值<br>min 和 min_element的区别同上，看到下面的例子你就会明白了</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> a[<span class="number">6</span>] = &#123;<span class="number">5</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">6</span>, <span class="number">1</span>, <span class="number">4</span>&#125;;</span><br><span class="line">	<span class="type">int</span> b = a[<span class="number">0</span>];</span><br><span class="line">	<span class="type">int</span> c = a[<span class="number">1</span>];</span><br><span class="line">	cout&lt;&lt;<span class="built_in">max</span>(b, c)&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;<span class="built_in">min</span>(b,c)&lt;&lt;endl; <span class="comment">//输出为5 3</span></span><br><span class="line">	cout&lt;&lt;<span class="built_in">max_element</span>(a, a+<span class="number">6</span>) - a&lt;&lt;endl;<span class="comment">// 输出为3 </span></span><br><span class="line">	cout&lt;&lt;*<span class="built_in">max_element</span>(a, a+<span class="number">6</span>)&lt;&lt;endl;<span class="comment">//输出为 6 </span></span><br><span class="line">	cout&lt;&lt;<span class="built_in">min_element</span>(a, a+<span class="number">6</span>) - a&lt;&lt;endl;<span class="comment">// 输出为4 </span></span><br><span class="line">	cout&lt;&lt;*<span class="built_in">min_element</span>(a, a+<span class="number">6</span>)&lt;&lt;endl;	 <span class="comment">//输出为1 </span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
-<h3 id="数值统计"><a href="#数值统计" class="headerlink" title="数值统计"></a>数值统计</h3><p>Time Limit: 2000&#x2F;1000 MS (Java&#x2F;Others)    Memory Limit: 65536&#x2F;32768 K (Java&#x2F;Others)<br>Total Submission(s): 215152    Accepted Submission(s): 99683</p>
-<p><strong>Problem Description</strong><br>统计给定的n个数中，负数、零和正数的个数。</p>
-<p><strong>Input</strong><br>输入数据有多组，每组占一行，每行的第一个数是整数n（n&lt;100），表示需要统计的数值的个数，然后是n个实数；如果n&#x3D;0，则表示输入结束，该行不做处理。</p>
-<p><strong>Output</strong><br>对于每组输入数据，输出一行a,b和c，分别表示给定的数据中负数、零和正数的个数。</p>
-<p><strong>Sample Input</strong><br>6 0 1 2 3 -1 0<br>5 1 2 3 4 0.5<br>0 </p>
-<p><strong>Sample Output</strong><br>1 2 3<br>0 0 5</p>
-<p>可以用自己做的顺序表来做这道题，与上一道题相似，<br>初始 遍历 判断 既可以了<br> 可以参考下面的代码自行完成。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"> <span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"> <span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    <span class="comment">//n = 0 结束</span></span><br><span class="line">    <span class="keyword">while</span>(cin &gt;&gt; n &amp;&amp; n)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">float</span> f_num = <span class="number">0</span>,zero = <span class="number">0</span>,z_num = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span> ; i &lt; n; ++i)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="type">int</span> x;</span><br><span class="line">                cin &gt;&gt; x;</span><br><span class="line">                <span class="keyword">if</span>(x &lt; <span class="number">0</span>)</span><br><span class="line">                 f_num++;</span><br><span class="line">                <span class="keyword">if</span>(x == <span class="number">0</span>)</span><br><span class="line">                 zero++;</span><br><span class="line">                <span class="keyword">if</span>(x &gt; <span class="number">0</span>)</span><br><span class="line">                 z_num++;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        cout &lt;&lt; f_num &lt;&lt;zero &lt;&lt; z_num &lt;&lt;endl;</span><br><span class="line">        f_num = zero = z_num = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="青年歌手大奖赛-评委会打分"><a href="#青年歌手大奖赛-评委会打分" class="headerlink" title="青年歌手大奖赛_评委会打分"></a>青年歌手大奖赛_评委会打分</h3><p>Time Limit: 2000&#x2F;1000 MS (Java&#x2F;Others)    Memory Limit: 65536&#x2F;32768 K (Java&#x2F;Others)<br>Total Submission(s): 175519    Accepted Submission(s): 85579</p>
-<p><strong>Problem Description</strong><br>青年歌手大奖赛中，评委会给参赛选手打分。选手得分规则为去掉一个最高分和一个最低分，然后计算平均得分，请编程输出某选手的得分。</p>
-<p><strong>Input</strong><br>输入数据有多组，每组占一行，每行的第一个数是n(2&lt;n&lt;&#x3D;100)，表示评委的人数，然后是n个评委的打分。</p>
-<p><strong>Output</strong><br>对于每组输入数据，输出选手的得分，结果保留2位小数，每组输出占一行。</p>
-<p><strong>Sample Input</strong><br>3 99 98 97<br>4 100 99 98 97</p>
-<p><strong>Sample Output</strong><br>98.00<br>98.50</p>
-<blockquote>
-<p>思路 用之前的顺序表。将TypeElement 从int 改为 float<br>创建顺序表 遍历顺序表 定义一个最大数和最小数用作判断 最大可以是 101 最小 -1，在遍历顺序表的过程中判断并求和，</p>
-</blockquote>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> Max = <span class="number">-1</span> ; <span class="type">int</span> Min - <span class="number">101</span></span><br><span class="line"> <span class="keyword">if</span>(ele &gt; Max) Max = ele;</span><br><span class="line"> <span class="keyword">if</span>(ele &lt; Min) Min = ele;</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
-<p>然后 （sum - Max -Min）&#x2F;（n-2）</p>
-
+<h2 id="LCP-01-猜数字"><a href="#LCP-01-猜数字" class="headerlink" title="LCP 01. 猜数字"></a>LCP 01. 猜数字</h2><p>简单</p>
+<p>小A 和 小B 在玩猜数字。小B 每次从 1, 2, 3 中随机选择一个，小A 每次也从 1, 2, 3 中选择一个猜。他们一共进行三次这个游戏，请返回 小A 猜对了几次？</p>
+<p>输入的guess数组为 小A 每次的猜测，answer数组为 小B 每次的选择。guess和answer的长度都等于3。</p>
+<p>示例 1：</p>
+<p>输入：guess &#x3D; [1,2,3], answer &#x3D; [1,2,3]<br>输出：3<br>解释：小A 每次都猜对了。<br>示例 2：</p>
+<p>输入：guess &#x3D; [2,2,3], answer &#x3D; [3,2,1]<br>输出：1<br>解释：小A 只猜对了第二次。</p>
+<p>限制：</p>
+<p>guess 的长度 &#x3D; 3<br>answer 的长度 &#x3D; 3<br>guess 的元素取值为 {1, 2, 3} 之一。<br>answer 的元素取值为 {1, 2, 3} 之一。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line">public:</span><br><span class="line">    <span class="type">int</span> <span class="title function_">game</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;&amp; guess, <span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;&amp; answer)</span> &#123;</span><br><span class="line">        <span class="type">int</span> res = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;size(guess);++i)&#123;</span><br><span class="line">            <span class="keyword">if</span> (guess[i]==answer[i]) res++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
                 
             </div>
             <hr/>
@@ -478,7 +453,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://hahlol.github.io/2024/02/04/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88c-%EF%BC%89%E7%AC%AC%E4%B8%89%E5%A4%A9/">http://hahlol.github.io/2024/02/04/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88c-%EF%BC%89%E7%AC%AC%E4%B8%89%E5%A4%A9/</a>
+                    <a href="http://hahlol.github.io/2024/02/05/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88c-%EF%BC%89%E7%AC%AC%E5%9B%9B%E5%A4%A9/">http://hahlol.github.io/2024/02/05/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88c-%EF%BC%89%E7%AC%AC%E5%9B%9B%E5%A4%A9/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -604,13 +579,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/02/05/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88c-%EF%BC%89%E7%AC%AC%E5%9B%9B%E5%A4%A9/">
+                <a href="/2024/02/07/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88C++%EF%BC%89%E7%AC%AC%E4%BA%94%E5%A4%A9/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="数据结构（c++）第四天">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="数据结构（c++）第五天">
                         
-                        <span class="card-title">数据结构（c++）第四天</span>
+                        <span class="card-title">数据结构（c++）第五天</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -621,7 +596,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-02-05
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-02-07
                         </span>
                         <span class="publish-author">
                             
@@ -657,13 +632,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/02/04/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88C-%EF%BC%89%E7%AC%AC%E4%BA%8C%E5%A4%A9/">
+                <a href="/2024/02/04/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88c-%EF%BC%89%E7%AC%AC%E4%B8%89%E5%A4%A9/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="数据结构（C++）第二节">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="数据结构（c++）第三天">
                         
-                        <span class="card-title">数据结构（C++）第二节</span>
+                        <span class="card-title">数据结构（c++）第三天</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
