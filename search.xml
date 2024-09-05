@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Markdown的使用</title>
+    <url>/2024/02/03/Markdowm%E7%9A%84%E5%9F%BA%E7%A1%80%E7%94%A8%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="Markdown的使用"><a href="#Markdown的使用" class="headerlink" title="Markdown的使用"></a>Markdown的使用</h1><blockquote>
+<p>Markdown是一种轻量级的「标记语言」，简单的学习了解一下它的语法。</p>
+</blockquote>
+<h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h2><blockquote>
+<p>不同数量的<code>#</code>可以完成不同的标题，如下：  </p>
+</blockquote>
+<p>输入：  </p>
+<p><code>#</code> 一级标题</p>
+<p><code>##</code> 二级标题</p>
+<p><code>###</code> 三级标题</p>
+<p>…</p>
+<p>效果：</p>
+<h3 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h3><h4 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h4><h5 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h5><h2 id="2-字体样式"><a href="#2-字体样式" class="headerlink" title="2. 字体样式"></a>2. 字体样式</h2><blockquote>
+<p>在需要加粗的文本前后添加<code>**</code>,要斜体的文本前后添加<code>_</code>或一个<code>*</code>  ,需要使用删除线时，在需要删除的文件两边加<code>~~</code>,如下</p>
+</blockquote>
+<p><code>**</code>这个是粗体<code>**</code> </p>
+<p><strong>这个是粗体</strong></p>
+<p><code>*</code>这个是斜体<code>*</code> </p>
+<p><em>这个是斜体</em></p>
+<blockquote>
+<p>他们Like加法</p>
+</blockquote>
+<p><code>***</code>粗加斜体 <code>***</code> <code>_**</code>粗加斜体<code>**_</code></p>
+<p><em><strong>粗加斜体</strong></em></p>
+<p><code>~~</code>删除线<code>~~</code></p>
+<p><del>删除线</del></p>
+<p>注：如果想给字体换颜色、字体或者居中显示，需要使用内嵌HTML来实现。</p>
+<h2 id="3-列表"><a href="#3-列表" class="headerlink" title="3 列表"></a>3 列表</h2><h3 id="3-1-无序列表"><a href="#3-1-无序列表" class="headerlink" title="3.1 无序列表"></a>3.1 无序列表</h3><blockquote>
+<p>无序列表的使用，在符号<code>-</code>后加空格使用。如下：</p>
+</blockquote>
+<p><code>-</code>无序列表 1</p>
+<p><code>-</code>无序列表 2</p>
+<p><code>-</code>无序列表 3</p>
+<ul>
+<li>无序列表 1</li>
+<li>无序列表 2</li>
+<li>无序列表 3</li>
+</ul>
+<blockquote>
+<p>如果要控制列表的层级，则需要在符号<code>-</code>前使用空格。如下：</p>
+</blockquote>
+<p><code>-</code> 无序列表 1</p>
+<p><code>-</code> 无序列表 2</p>
+<p> $~~~$<code>-</code> 无序列表 2.1</p>
+<p> $~~~$<code>-</code>无序列表 2.2</p>
+<ul>
+<li>无序列表 1</li>
+<li>无序列表 2<ul>
+<li>无序列表 2.1</li>
+<li>无序列表 2.2</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-2-有序列表"><a href="#3-2-有序列表" class="headerlink" title="3.2 有序列表"></a>3.2 有序列表</h3><blockquote>
+<p>有序列表的使用，在数字及符号<code>.</code>后加空格后输入内容，数字会自动编号，如下：</p>
+</blockquote>
+<p>1<code>. </code>有序列表 1</p>
+<p>1<code>. </code>有序列表 2</p>
+<p>3<code>. </code>有序列表 3</p>
+<ol>
+<li>有序列表 1</li>
+<li>有序列表 2</li>
+<li>有序列表 3</li>
+</ol>
+<h2 id="4-引用"><a href="#4-引用" class="headerlink" title="4. 引用"></a>4. 引用</h2><p>引用的格式是在符号<code>&gt;</code>后面书写文字。如下：</p>
+<p><code>&gt; </code>初学Markdown</p>
+<blockquote>
+<p>初学Markdown</p>
+</blockquote>
+<h2 id="5-链接"><a href="#5-链接" class="headerlink" title="5. 链接"></a>5. 链接</h2><blockquote>
+<p>用法显而易见</p>
+</blockquote>
+<p>   <code>[</code>我的b站<code>](https://space.bilibili.com/1076101780?spm_id_from=333.1007.0.0)</code></p>
+<p>  <a href="https://space.bilibili.com/1076101780?spm_id_from=333.1007.0.0">我的b站</a></p>
+<h2 id="6-图片"><a href="#6-图片" class="headerlink" title="6.  图片"></a>6.  图片</h2><p>插入图片，格式如下：</p>
+<p>这是图床的新式</p>
+<p><code>![</code>这里写图片描述<code>](https....)</code></p>
+<p><img src="https://pic.imgdb.cn/item/65be14d5871b83018a6f8a17.jpg" alt="alt text"></p>
+<p><img src="https://pic.imgdb.cn/item/65be14ee871b83018a6fe016.png" alt="alt text"></p>
+<p>如果想在本地插入图片</p>
+<p>   <code>![alt text](link &quot;optional title&quot;)</code></p>
+<pre><code>alt text：图片的Alternative文本，用来描述图片的关键词，可以不写。最初的本意是当图片因为某种原因不能被显示时而出现的替代文字，后来又被用于SEO，可以方便搜索引擎根据Alt text里面的关键词搜索到图片。 
+
+link：可以是图片的本地地址、网址。
+
+&quot;optional title&quot;：鼠标悬置于图片上会出现的标题文字，可以不写。
+</code></pre>
+<h2 id="7-分割线"><a href="#7-分割线" class="headerlink" title="7. 分割线"></a>7. 分割线</h2><p>可以在一行中用三个以上的减号来建立一个分隔线，同时需要在分隔线的上面空一行。如下：</p>
+<hr>
+<h2 id="8-表格"><a href="#8-表格" class="headerlink" title="8. 表格"></a>8. 表格</h2><p>可以使用冒号来定义表格的对齐方式，如下：</p>
+<p><code>| 姓名   | 年龄 |     工作 |</code></p>
+<p><code>| :----- | :--: | -------: |</code></p>
+<p><code>| 无敌大青蛙 |  18  | 写代码 |</code></p>
+<p><code>| hahlol |  20  | 还是写代码 |</code></p>
+<p><code>| chen |  22  | 游戏开发 |</code></p>
+<table>
+<thead>
+<tr>
+<th align="left">姓名</th>
+<th align="center">年龄</th>
+<th align="right">工作</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">无敌大青蛙</td>
+<td align="center">18</td>
+<td align="right">写代码</td>
+</tr>
+<tr>
+<td align="left">hahlol</td>
+<td align="center">20</td>
+<td align="right">还是写代码</td>
+</tr>
+<tr>
+<td align="left">chen</td>
+<td align="center">22</td>
+<td align="right">游戏开发</td>
+</tr>
+</tbody></table>
+<h2 id="9-关于公式"><a href="#9-关于公式" class="headerlink" title="9. 关于公式"></a>9. 关于公式</h2><blockquote>
+<p>通过<code>$$</code>,在其中其中输入对应数学公式</p>
+</blockquote>
+<p><code>$$</code><br><code>\lim_&#123;x \to \infin&#125;\frac&#123;sin(t)&#125;&#123;x-1&#125;</code><br><code>$$</code></p>
+<p>效果如下：</p>
+<p>$$<br>输入对应公式：\lim_{x \to \infin}\frac{sin(t)}{x-1}<br>$$</p>
+<blockquote>
+<p>通过单个<code>$</code>,可在文字中插入数学公式</p>
+</blockquote>
+<p>文字中插 <code>$\lim_&#123;x \to\infin&#125;F(x)$</code>一段公式。</p>
+<p>文字中插 $\lim_{x \to\infin}F(x)$一段公式。</p>
+<h2 id="10-code"><a href="#10-code" class="headerlink" title="10. code"></a>10. code</h2><blockquote>
+<p>输入&#96;&#96;&#96;加对应语言 </p>
+</blockquote>
+<blockquote>
+<p>末尾&#96;&#96;&#96; 结束</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//```C#</span></span><br><span class="line">debug.<span class="built_in">log</span>(<span class="string">&quot;Hello World !&quot;</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//```C++</span></span><br><span class="line"> cout&lt;&lt; <span class="string">&quot;Hello World !&quot;</span> &lt;&lt;endl;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>blog的搭建</title>
+    <url>/2024/02/04/blog%E7%9A%84%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h1 id="blog的搭建"><a href="#blog的搭建" class="headerlink" title="blog的搭建"></a>blog的搭建</h1><p>过几天再写嘿嘿</p>
+<p>#基础用法</p>
+<h1 id="端口占用"><a href="#端口占用" class="headerlink" title="端口占用"></a>端口占用</h1><p>当您遇到某个端口（如8080端口）被占用，导致您无法在该端口上启动新的服务或应用程序时，您可以通过以下步骤来查找并结束占用该端口的进程：</p>
+<h3 id="1-查找占用端口的进程号"><a href="#1-查找占用端口的进程号" class="headerlink" title="1. 查找占用端口的进程号"></a>1. 查找占用端口的进程号</h3><p>在命令提示符（CMD）或PowerShell中，您可以使用<code>netstat</code>命令结合管道符和<code>findstr</code>命令来查找占用特定端口的进程号（PID）。以下是具体命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">netstat -nao | findstr <span class="string">&quot;8080&quot;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>netstat</code> 是一个网络工具，用于显示网络连接、路由表、接口统计等信息。</li>
+<li><code>-nao</code> 参数组合中，<code>-n</code> 表示以数字形式显示地址和端口号，<code>-a</code> 表示显示所有连接和侦听端口，<code>-o</code> 表示显示每个连接的拥有者进程ID（PID）。</li>
+<li><code>|</code> 是管道符，用于将前一个命令的输出作为后一个命令的输入。</li>
+<li><code>findstr &quot;8080&quot;</code> 用于从<code>netstat</code>命令的输出中筛选出包含“8080”的行。</li>
+</ul>
+<p>执行此命令后，您会看到类似以下的输出（具体数值可能不同）：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">TCP    0.0.0.0:8080           0.0.0.0:0              LISTENING       5076</span><br></pre></td></tr></table></figure>
+
+<p>这表示端口8080正在被一个PID为5076的进程监听。</p>
+<h3 id="2-结束占用端口的进程"><a href="#2-结束占用端口的进程" class="headerlink" title="2. 结束占用端口的进程"></a>2. 结束占用端口的进程</h3><p>一旦您知道了占用端口的进程ID（在这个例子中是5076），您可以通过以下两种方式之一来结束该进程：</p>
+<h4 id="使用-taskkill-命令"><a href="#使用-taskkill-命令" class="headerlink" title="使用 taskkill 命令"></a>使用 taskkill 命令</h4><p>在命令提示符（CMD）或PowerShell中，您可以使用<code>taskkill</code>命令来结束进程。以下是具体命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">taskkill -pid 5076 -f</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>-pid 5076</code> 指定了要结束的进程的PID。</li>
+<li><code>-f</code> 表示强制结束进程。</li>
+</ul>
+<h4 id="使用任务管理器"><a href="#使用任务管理器" class="headerlink" title="使用任务管理器"></a>使用任务管理器</h4><p>如果您更喜欢图形界面，也可以通过任务管理器来结束进程：</p>
+<ol>
+<li>右键点击任务栏，选择“任务管理器”或按<code>Ctrl+Shift+Esc</code>打开任务管理器。</li>
+<li>切换到“详细信息”或“进程”选项卡（取决于您的Windows版本）。</li>
+<li>在列表中找到PID与您在<code>netstat</code>命令输出中看到的相匹配的进程。</li>
+<li>右键点击该进程，选择“结束任务”来结束它。</li>
+</ol>
+<p>请注意，结束进程之前请确保您了解该进程的作用，避免误操作导致系统或应用程序出现问题。</p>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>QFramework</title>
+    <url>/2024/02/03/QFramework/</url>
+    <content><![CDATA[<h1 id="Markdown的使用"><a href="#Markdown的使用" class="headerlink" title="Markdown的使用"></a>Markdown的使用</h1><blockquote>
+<p>Markdown是一种轻量级的「标记语言」，简单的学习了解一下它的语法。</p>
+</blockquote>
+<h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h2><blockquote>
+<p>不同数量的<code>#</code>可以完成不同的标题，如下：  </p>
+</blockquote>
+<p>输入：  </p>
+<p><code>#</code> 一级标题</p>
+<p><code>##</code> 二级标题</p>
+<p><code>###</code> 三级标题</p>
+<p>…</p>
+<p>效果：</p>
+<h3 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h3><h4 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h4><h5 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h5><h2 id="2-字体样式"><a href="#2-字体样式" class="headerlink" title="2. 字体样式"></a>2. 字体样式</h2><blockquote>
+<p>在需要加粗的文本前后添加<code>**</code>,要斜体的文本前后添加<code>_</code>或一个<code>*</code>  ,需要使用删除线时，在需要删除的文件两边加<code>~~</code>,如下</p>
+</blockquote>
+<p><code>**</code>这个是粗体<code>**</code> </p>
+<p><strong>这个是粗体</strong></p>
+<p><code>*</code>这个是斜体<code>*</code> </p>
+<p><em>这个是斜体</em></p>
+<blockquote>
+<p>他们Like加法</p>
+</blockquote>
+<p><code>***</code>粗加斜体 <code>***</code> <code>_**</code>粗加斜体<code>**_</code></p>
+<p><em><strong>粗加斜体</strong></em></p>
+<p><code>~~</code>删除线<code>~~</code></p>
+<p><del>删除线</del></p>
+<p>注：如果想给字体换颜色、字体或者居中显示，需要使用内嵌HTML来实现。</p>
+<h2 id="3-列表"><a href="#3-列表" class="headerlink" title="3 列表"></a>3 列表</h2><h3 id="3-1-无序列表"><a href="#3-1-无序列表" class="headerlink" title="3.1 无序列表"></a>3.1 无序列表</h3><blockquote>
+<p>无序列表的使用，在符号<code>-</code>后加空格使用。如下：</p>
+</blockquote>
+<p><code>-</code>无序列表 1</p>
+<p><code>-</code>无序列表 2</p>
+<p><code>-</code>无序列表 3</p>
+<ul>
+<li>无序列表 1</li>
+<li>无序列表 2</li>
+<li>无序列表 3</li>
+</ul>
+<blockquote>
+<p>如果要控制列表的层级，则需要在符号<code>-</code>前使用空格。如下：</p>
+</blockquote>
+<p><code>-</code> 无序列表 1</p>
+<p><code>-</code> 无序列表 2</p>
+<p> $~~~$<code>-</code> 无序列表 2.1</p>
+<p> $~~~$<code>-</code>无序列表 2.2</p>
+<ul>
+<li>无序列表 1</li>
+<li>无序列表 2<ul>
+<li>无序列表 2.1</li>
+<li>无序列表 2.2</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-2-有序列表"><a href="#3-2-有序列表" class="headerlink" title="3.2 有序列表"></a>3.2 有序列表</h3><blockquote>
+<p>有序列表的使用，在数字及符号<code>.</code>后加空格后输入内容，数字会自动编号，如下：</p>
+</blockquote>
+<p>1<code>. </code>有序列表 1</p>
+<p>1<code>. </code>有序列表 2</p>
+<p>3<code>. </code>有序列表 3</p>
+<ol>
+<li>有序列表 1</li>
+<li>有序列表 2</li>
+<li>有序列表 3</li>
+</ol>
+<h2 id="4-引用"><a href="#4-引用" class="headerlink" title="4. 引用"></a>4. 引用</h2><p>引用的格式是在符号<code>&gt;</code>后面书写文字。如下：</p>
+<p><code>&gt; </code>初学Markdown</p>
+<blockquote>
+<p>初学Markdown</p>
+</blockquote>
+<h2 id="5-链接"><a href="#5-链接" class="headerlink" title="5. 链接"></a>5. 链接</h2><blockquote>
+<p>用法显而易见</p>
+</blockquote>
+<p>   <code>[</code>我的b站<code>](https://space.bilibili.com/1076101780?spm_id_from=333.1007.0.0)</code></p>
+<p>  <a href="https://space.bilibili.com/1076101780?spm_id_from=333.1007.0.0">我的b站</a></p>
+<h2 id="6-图片"><a href="#6-图片" class="headerlink" title="6.  图片"></a>6.  图片</h2><p>插入图片，格式如下：</p>
+<p>这是图床的新式</p>
+<p><code>![</code>这里写图片描述<code>](https....)</code></p>
+<p><img src="https://pic.imgdb.cn/item/65be14d5871b83018a6f8a17.jpg" alt="alt text"></p>
+<p><img src="https://pic.imgdb.cn/item/65be14ee871b83018a6fe016.png" alt="alt text"></p>
+<p>如果想在本地插入图片</p>
+<p>   <code>![alt text](link &quot;optional title&quot;)</code></p>
+<pre><code>alt text：图片的Alternative文本，用来描述图片的关键词，可以不写。最初的本意是当图片因为某种原因不能被显示时而出现的替代文字，后来又被用于SEO，可以方便搜索引擎根据Alt text里面的关键词搜索到图片。 
+
+link：可以是图片的本地地址、网址。
+
+&quot;optional title&quot;：鼠标悬置于图片上会出现的标题文字，可以不写。
+</code></pre>
+<h2 id="7-分割线"><a href="#7-分割线" class="headerlink" title="7. 分割线"></a>7. 分割线</h2><p>可以在一行中用三个以上的减号来建立一个分隔线，同时需要在分隔线的上面空一行。如下：</p>
+<hr>
+<h2 id="8-表格"><a href="#8-表格" class="headerlink" title="8. 表格"></a>8. 表格</h2><p>可以使用冒号来定义表格的对齐方式，如下：</p>
+<p><code>| 姓名   | 年龄 |     工作 |</code></p>
+<p><code>| :----- | :--: | -------: |</code></p>
+<p><code>| 无敌大青蛙 |  18  | 写代码 |</code></p>
+<p><code>| hahlol |  20  | 还是写代码 |</code></p>
+<p><code>| chen |  22  | 游戏开发 |</code></p>
+<table>
+<thead>
+<tr>
+<th align="left">姓名</th>
+<th align="center">年龄</th>
+<th align="right">工作</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">无敌大青蛙</td>
+<td align="center">18</td>
+<td align="right">写代码</td>
+</tr>
+<tr>
+<td align="left">hahlol</td>
+<td align="center">20</td>
+<td align="right">还是写代码</td>
+</tr>
+<tr>
+<td align="left">chen</td>
+<td align="center">22</td>
+<td align="right">游戏开发</td>
+</tr>
+</tbody></table>
+<h2 id="9-关于公式"><a href="#9-关于公式" class="headerlink" title="9. 关于公式"></a>9. 关于公式</h2><blockquote>
+<p>通过<code>$$</code>,在其中其中输入对应数学公式</p>
+</blockquote>
+<p><code>$$</code><br><code>\lim_&#123;x \to \infin&#125;\frac&#123;sin(t)&#125;&#123;x-1&#125;</code><br><code>$$</code></p>
+<p>效果如下：</p>
+<p>$$<br>输入对应公式：\lim_{x \to \infin}\frac{sin(t)}{x-1}<br>$$</p>
+<blockquote>
+<p>通过单个<code>$</code>,可在文字中插入数学公式</p>
+</blockquote>
+<p>文字中插 <code>$\lim_&#123;x \to\infin&#125;F(x)$</code>一段公式。</p>
+<p>文字中插 $\lim_{x \to\infin}F(x)$一段公式。</p>
+<h2 id="10-code"><a href="#10-code" class="headerlink" title="10. code"></a>10. code</h2><blockquote>
+<p>输入&#96;&#96;&#96;加对应语言 </p>
+</blockquote>
+<blockquote>
+<p>末尾&#96;&#96;&#96; 结束</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//```C#</span></span><br><span class="line">debug.<span class="built_in">log</span>(<span class="string">&quot;Hello World !&quot;</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//```C++</span></span><br><span class="line"> cout&lt;&lt; <span class="string">&quot;Hello World !&quot;</span> &lt;&lt;endl;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>游戏框架</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据结构（c++）第五天</title>
+    <url>/2024/02/07/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88C++%EF%BC%89%E7%AC%AC%E4%BA%94%E5%A4%A9/</url>
+    <content><![CDATA[<h1 id="重生之（重新）学习数据结构–第五天-之-链表"><a href="#重生之（重新）学习数据结构–第五天-之-链表" class="headerlink" title="重生之（重新）学习数据结构–第五天 之 链表"></a>重生之（重新）学习数据结构–第五天 之 链表</h1><h2 id="一，单项链表"><a href="#一，单项链表" class="headerlink" title="一，单项链表"></a>一，单项链表</h2><blockquote>
+<p>对于顺序存储的结构，最大的缺点就是：<strong>插入</strong>和<strong>删除</strong>的时候需要移动大量的元素，所以基于前人智慧发明了链表。</p>
+</blockquote>
+<blockquote>
+<p>链表室友一个个结点组成，没个结点通过链接关系起来，没个结点都有一个后继结点，最后一个结点的后继结点时<strong>Null</strong></p>
+</blockquote>
+<h2 id="单项链表的插入"><a href="#单项链表的插入" class="headerlink" title="单项链表的插入"></a>单项链表的插入</h2><p> 第一步，判断插入位置是否合法<br> 第二步，对给定的元素，生成一个链表结点<br> 第三步，如果插入位置时0，直接把生成的结点的后继结点，设置为当前的链表结点，并且把生成的结点设置为新的链表头。<br> 第四步，如果插入位置不是0，遍历到插入位置前一个位置，把生成的结点插入<br> 第五步，更新列表的大小，即对链表的元素执行加一操作</p>
+<h2 id="单项链表的删除"><a href="#单项链表的删除" class="headerlink" title="单项链表的删除"></a>单项链表的删除</h2><p>  第一步，判断删除位置是否合法<br>  第二步，如果删除位置非首个结点，直接把链表头更新为它的后继结点。<br>  第三步，如果删除位置非首个结点，则遍历到要删除的前一个结点，并且把前一个结点的后继结点设为后继的后继。<br>  第四步，更新链表的大小，也就是将链表的大小执行减一操作。</p>
+<h2 id="单项链表的元素查找"><a href="#单项链表的元素查找" class="headerlink" title="单项链表的元素查找"></a>单项链表的元素查找</h2><p>   第一步，遍历整个链表，把链表的没个元素和指定元素比较，如果相等则返回当前遍历的结点。<br>   第二步，如果遍历完整个链表，没有找到元素，返回Null。</p>
+<h2 id="单项链表的元素索引"><a href="#单项链表的元素索引" class="headerlink" title="单项链表的元素索引"></a>单项链表的元素索引</h2><p>   第一步，判断给定索引合法<br>   第二步，直接通过索引访问，获得对应元素。</p>
+<h2 id="单项链表的删除-1"><a href="#单项链表的删除-1" class="headerlink" title="单项链表的删除"></a>单项链表的删除</h2><p>   直接通过索引访问结点，修改值</p>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2>   <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdexcept&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> eleType int</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//单项链表</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">ListNode</span>&#123;</span><br><span class="line">	eleType data;</span><br><span class="line">	ListNode *next;</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">ListNode</span>(eleType x):<span class="built_in">data</span>(x),<span class="built_in">next</span>(<span class="literal">NULL</span>)&#123;&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">LinkedList</span>&#123;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">	ListNode* head;</span><br><span class="line">	<span class="type">int</span> size;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span>:</span><br><span class="line">		<span class="built_in">LinkedList</span>():<span class="built_in">head</span>(<span class="literal">NULL</span>),<span class="built_in">size</span>(<span class="number">0</span>)&#123;&#125;</span><br><span class="line">		~<span class="built_in">LinkedList</span>();</span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">insert</span><span class="params">(<span class="type">int</span> i,eleType value)</span></span>;</span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">remove</span><span class="params">(<span class="type">int</span> i)</span></span>;</span><br><span class="line">	<span class="function">ListNode* <span class="title">find</span><span class="params">(eleType value)</span></span>;</span><br><span class="line">	<span class="function">ListNode* <span class="title">get</span><span class="params">(<span class="type">int</span> i)</span></span>;</span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">update</span><span class="params">(<span class="type">int</span> i,eleType value)</span></span>;</span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">print</span><span class="params">()</span></span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">LinkedList::~<span class="built_in">LinkedList</span>()&#123;</span><br><span class="line">	ListNode *curr = head;</span><br><span class="line">	<span class="keyword">while</span>(curr != <span class="literal">NULL</span>)&#123;</span><br><span class="line">		ListNode *tmp = curr;</span><br><span class="line">		curr = curr-&gt;next;</span><br><span class="line">		<span class="keyword">delete</span> tmp;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">LinkedList::insert</span><span class="params">(<span class="type">int</span> i,eleType value)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(i&lt;<span class="number">0</span> || i &gt; size)&#123;</span><br><span class="line">		<span class="keyword">throw</span> std::<span class="built_in">out_of_range</span>(<span class="string">&quot;Invalid postion&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	ListNode *newNode = <span class="keyword">new</span> <span class="built_in">ListNode</span>(value);</span><br><span class="line">	<span class="keyword">if</span>(i==<span class="number">0</span>)&#123;</span><br><span class="line">		newNode-&gt;next = head;</span><br><span class="line">		head = newNode;</span><br><span class="line">	&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">		ListNode *curr = head;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>;j &lt; i - <span class="number">1</span>; j++)&#123;</span><br><span class="line">			curr = curr-&gt;next;</span><br><span class="line">		&#125;                                                                              </span><br><span class="line">		newNode-&gt;next = curr -&gt; next;</span><br><span class="line">		curr -&gt; next = newNode;</span><br><span class="line">	&#125;</span><br><span class="line">	++size;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">LinkedList::remove</span><span class="params">(<span class="type">int</span> i)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(i&lt;<span class="number">0</span> || i &gt;= size)&#123;</span><br><span class="line">		<span class="keyword">throw</span> std::<span class="built_in">out_of_range</span>(<span class="string">&quot;Invalid position&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span>(i == <span class="number">0</span>)&#123;</span><br><span class="line">		ListNode *temp = head;</span><br><span class="line">		head = head-&gt;next;</span><br><span class="line">		<span class="keyword">delete</span> temp;</span><br><span class="line">	&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">		ListNode *curr = head;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>;i &lt; i - <span class="number">1</span>; j++)&#123;</span><br><span class="line">			curr = curr-&gt;next;</span><br><span class="line">		&#125;</span><br><span class="line">		ListNode *temp = curr -&gt; next;</span><br><span class="line">		curr -&gt; next = temp -&gt; next;</span><br><span class="line">		<span class="keyword">delete</span> temp;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	--size;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">ListNode *<span class="title">LinkedList::find</span><span class="params">(eleType value)</span></span>&#123;</span><br><span class="line">	ListNode *curr = head;</span><br><span class="line">	<span class="keyword">while</span>(curr &amp;&amp; curr-&gt;data != value)&#123;</span><br><span class="line">		curr = curr -&gt; next;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> curr;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">ListNode *<span class="title">LinkedList::get</span><span class="params">(<span class="type">int</span> i)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(i&lt;<span class="number">0</span> || i &gt;= size)&#123;</span><br><span class="line">		<span class="keyword">throw</span> std::<span class="built_in">out_of_range</span>(<span class="string">&quot;Invalid position&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	ListNode *curr = head;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>;j &lt; i; j++)&#123;</span><br><span class="line">		curr = curr -&gt; next;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> curr;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">LinkedList::update</span><span class="params">(<span class="type">int</span> i,eleType value)</span></span>&#123;</span><br><span class="line">	<span class="built_in">get</span>(i)-&gt;data = value;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">LinkedList::print</span><span class="params">()</span></span>&#123;</span><br><span class="line">	ListNode *curr = head;</span><br><span class="line">	<span class="keyword">while</span>(curr)&#123;</span><br><span class="line">		cout &lt;&lt; curr -&gt; data &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">		curr = curr -&gt; next;</span><br><span class="line">	&#125;</span><br><span class="line">	cout&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//测试一下</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    LinkedList list;</span><br><span class="line">	list.<span class="built_in">insert</span>(<span class="number">0</span>,<span class="number">10</span>);</span><br><span class="line">	list.<span class="built_in">insert</span>(<span class="number">1</span>,<span class="number">20</span>);</span><br><span class="line">	list.<span class="built_in">insert</span>(<span class="number">2</span>,<span class="number">30</span>);</span><br><span class="line">	list.<span class="built_in">insert</span>(<span class="number">3</span>,<span class="number">40</span>);</span><br><span class="line">	list.<span class="built_in">insert</span>(<span class="number">4</span>,<span class="number">50</span>);</span><br><span class="line">	list.<span class="built_in">insert</span>(<span class="number">5</span>,<span class="number">60</span>);</span><br><span class="line">	list.<span class="built_in">print</span>();<span class="comment">//10 20 30 40 50 60 </span></span><br><span class="line">	list.<span class="built_in">remove</span>(<span class="number">1</span>);</span><br><span class="line">	list.<span class="built_in">print</span>();<span class="comment">//10 30 40 50 60</span></span><br><span class="line">	ListNode * Text;</span><br><span class="line">	Text = list.<span class="built_in">find</span>(<span class="number">50</span>);</span><br><span class="line">	cout &lt;&lt; Text -&gt; data &lt;&lt; endl;<span class="comment">//50</span></span><br><span class="line">	list.<span class="built_in">update</span>(<span class="number">3</span>,<span class="number">520</span>);</span><br><span class="line">	cout &lt;&lt; Text -&gt; data &lt;&lt; endl;<span class="comment">//520</span></span><br><span class="line">	Text = list.<span class="built_in">get</span>(<span class="number">3</span>);</span><br><span class="line">	cout &lt;&lt; Text -&gt; data &lt;&lt; endl;<span class="comment">//520</span></span><br><span class="line">	cout &lt;&lt; Text &lt;&lt; endl;<span class="comment">//0x82def0</span></span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">   </span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>测试结果<br>10 20 30 40 50 60<br>10 30 40 50 60<br>50<br>520<br>520<br>0x82def0</p>
+</blockquote>
+<h2 id="简单的做一道题"><a href="#简单的做一道题" class="headerlink" title="简单的做一道题"></a>简单的做一道题</h2><p><strong>A+B for Input-Output Practice (IV)</strong><br>Time Limit: 2000&#x2F;1000 MS (Java&#x2F;Others)    Memory Limit: 65536&#x2F;32768 K (Java&#x2F;Others)<br>Total Submission(s): 198346    Accepted Submission(s): 102330</p>
+<p><strong>Problem Description</strong><br>Your task is to Calculate the sum of some integers.</p>
+<p><strong>Input</strong><br>Input contains multiple test cases. Each test case contains a integer N, and then N integers follow in the same line. A test case starting with 0 terminates the input and this test case is not to be processed.</p>
+<p><strong>Output</strong><br>For each group of input integers you should output their sum in one line, and with one line of output for each line in input.</p>
+<p><strong>Sample Input</strong><br>4 1 2 3 4<br>5 1 2 3 4 5<br>0 </p>
+<p><strong>Sample Output</strong><br>10<br>15</p>
+<p>用我们写的链表来做<br>直接在构造函数中加一个方法 sum（）；<br>eleType sum(); &#x2F;&#x2F;求列表中所有元素的和</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">  <span class="function">eleType <span class="title">LinkedList::sum</span><span class="params">()</span></span>&#123;</span><br><span class="line">	ListNode *curr = head;</span><br><span class="line">	eleType ret = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span>(curr!= <span class="literal">NULL</span>)&#123;</span><br><span class="line">		ret +=curr-&gt;data;</span><br><span class="line">		curr = curr-&gt;next;	</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   <span class="type">int</span> n;</span><br><span class="line">	<span class="keyword">while</span>( cin &gt;&gt; n &amp;&amp; n)&#123;</span><br><span class="line">		LinkedList l;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i &lt; n; ++i)&#123;</span><br><span class="line">			<span class="type">int</span> x;</span><br><span class="line">			cin &gt;&gt; x;</span><br><span class="line">			l.<span class="built_in">insert</span>(i,x);</span><br><span class="line">		&#125;</span><br><span class="line">		cout &lt;&lt; l.<span class="built_in">sum</span>() &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="数列有序"><a href="#数列有序" class="headerlink" title="数列有序!"></a>数列有序!</h2><p>Time Limit: 2000&#x2F;1000 MS (Java&#x2F;Others)    Memory Limit: 65536&#x2F;32768 K (Java&#x2F;Others)<br>Total Submission(s): 185833    Accepted Submission(s): 74875</p>
+<p><strong>Problem Description</strong><br>有n(n&lt;&#x3D;100)个整数，已经按照从小到大顺序排列好，现在另外给一个整数x，请将该数插入到序列中，并使新的序列仍然有序。</p>
+<p><strong>Input</strong><br>输入数据包含多个测试实例，每组数据由两行组成，第一行是n和m，第二行是已经有序的n个数的数列。n和m同时为0标示输入数据的结束，本行不做处理。</p>
+<p><strong>Output</strong><br>对于每个测试实例，输出插入新的元素后的数列。</p>
+<p><strong>Sample Input</strong><br>3 3<br>1 2 4<br>0 0</p>
+<p><strong>Sample Output</strong><br>1 2 3 4</p>
+<p>代码如下：创建两个新方法</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdexcept&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> eleType int</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//单项链表</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">ListNode</span>&#123;</span><br><span class="line">	eleType data;</span><br><span class="line">	ListNode *next;</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">ListNode</span>(eleType x):<span class="built_in">data</span>(x),<span class="built_in">next</span>(<span class="literal">NULL</span>)&#123;&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">LinkedList</span>&#123;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">	ListNode* head;</span><br><span class="line">	<span class="type">int</span> size;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span>:</span><br><span class="line">		<span class="built_in">LinkedList</span>():<span class="built_in">head</span>(<span class="literal">NULL</span>),<span class="built_in">size</span>(<span class="number">0</span>)&#123;&#125;</span><br><span class="line">		~<span class="built_in">LinkedList</span>();</span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">insert</span><span class="params">(<span class="type">int</span> i,eleType value)</span></span>;</span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">remove</span><span class="params">(<span class="type">int</span> i)</span></span>;</span><br><span class="line">	<span class="function">ListNode* <span class="title">find</span><span class="params">(eleType value)</span></span>;</span><br><span class="line">	<span class="function">ListNode* <span class="title">get</span><span class="params">(<span class="type">int</span> i)</span></span>;</span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">update</span><span class="params">(<span class="type">int</span> i,eleType value)</span></span>;</span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">print</span><span class="params">()</span></span>;</span><br><span class="line">	</span><br><span class="line">	<span class="function">eleType <span class="title">sum</span><span class="params">()</span></span>; <span class="comment">//求列表中所有元素的和</span></span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">append</span><span class="params">(eleType value)</span></span>; <span class="comment">// 插入元素到列表尾部</span></span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">asInsert</span><span class="params">(eleType value)</span></span>; <span class="comment">//按照递增顺序插入</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">LinkedList::~<span class="built_in">LinkedList</span>()&#123;</span><br><span class="line">	ListNode *curr = head;</span><br><span class="line">	<span class="keyword">while</span>(curr != <span class="literal">NULL</span>)&#123;</span><br><span class="line">		ListNode *tmp = curr;</span><br><span class="line">		curr = curr-&gt;next;</span><br><span class="line">		<span class="keyword">delete</span> tmp;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">LinkedList::insert</span><span class="params">(<span class="type">int</span> i,eleType value)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(i&lt;<span class="number">0</span> || i &gt; size)&#123;</span><br><span class="line">		<span class="keyword">throw</span> std::<span class="built_in">out_of_range</span>(<span class="string">&quot;Invalid postion&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	ListNode *newNode = <span class="keyword">new</span> <span class="built_in">ListNode</span>(value);</span><br><span class="line">	<span class="keyword">if</span>(i==<span class="number">0</span>)&#123;</span><br><span class="line">		newNode-&gt;next = head;</span><br><span class="line">		head = newNode;</span><br><span class="line">	&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">		ListNode *curr = head;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>;j &lt; i - <span class="number">1</span>; j++)&#123;</span><br><span class="line">			curr = curr-&gt;next;</span><br><span class="line">		&#125;                                                                              </span><br><span class="line">		newNode-&gt;next = curr -&gt; next;</span><br><span class="line">		curr -&gt; next = newNode;</span><br><span class="line">	&#125;</span><br><span class="line">	++size;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">LinkedList::remove</span><span class="params">(<span class="type">int</span> i)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(i&lt;<span class="number">0</span> || i &gt;= size)&#123;</span><br><span class="line">		<span class="keyword">throw</span> std::<span class="built_in">out_of_range</span>(<span class="string">&quot;Invalid position&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span>(i == <span class="number">0</span>)&#123;</span><br><span class="line">		ListNode *temp = head;</span><br><span class="line">		head = head-&gt;next;</span><br><span class="line">		<span class="keyword">delete</span> temp;</span><br><span class="line">	&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">		ListNode *curr = head;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>;i &lt; i - <span class="number">1</span>; j++)&#123;</span><br><span class="line">			curr = curr-&gt;next;</span><br><span class="line">		&#125;</span><br><span class="line">		ListNode *temp = curr -&gt; next;</span><br><span class="line">		curr -&gt; next = temp -&gt; next;</span><br><span class="line">		<span class="keyword">delete</span> temp;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	--size;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">ListNode *<span class="title">LinkedList::find</span><span class="params">(eleType value)</span></span>&#123;</span><br><span class="line">	ListNode *curr = head;</span><br><span class="line">	<span class="keyword">while</span>(curr &amp;&amp; curr-&gt;data != value)&#123;</span><br><span class="line">		curr = curr -&gt; next;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> curr;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">ListNode *<span class="title">LinkedList::get</span><span class="params">(<span class="type">int</span> i)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(i&lt;<span class="number">0</span> || i &gt;= size)&#123;</span><br><span class="line">		<span class="keyword">throw</span> std::<span class="built_in">out_of_range</span>(<span class="string">&quot;Invalid position&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	ListNode *curr = head;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>;j &lt; i; j++)&#123;</span><br><span class="line">		curr = curr -&gt; next;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> curr;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">LinkedList::update</span><span class="params">(<span class="type">int</span> i,eleType value)</span></span>&#123;</span><br><span class="line">	<span class="built_in">get</span>(i)-&gt;data = value;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">LinkedList::print</span><span class="params">()</span></span>&#123;</span><br><span class="line">	ListNode *curr = head;</span><br><span class="line">	<span class="keyword">while</span>(curr)&#123;</span><br><span class="line">		cout &lt;&lt; curr -&gt; data;</span><br><span class="line">		curr = curr -&gt; next;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span>(curr)&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">	&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">		cout&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">eleType <span class="title">LinkedList::sum</span><span class="params">()</span></span>&#123;</span><br><span class="line">	ListNode *curr = head;</span><br><span class="line">	eleType ret = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span>(curr!= <span class="literal">NULL</span>)&#123;</span><br><span class="line">		ret +=curr-&gt;data;</span><br><span class="line">		curr = curr-&gt;next;	</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">LinkedList::append</span><span class="params">(eleType value)</span></span>&#123;</span><br><span class="line">	<span class="built_in">insert</span>(size,value);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">LinkedList::asInsert</span><span class="params">(eleType value)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(size == <span class="number">0</span>)&#123;</span><br><span class="line">		<span class="built_in">insert</span>(<span class="number">0</span>,value);</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	ListNode *curr = head;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i&lt;size;++i)&#123;</span><br><span class="line">		<span class="keyword">if</span>(value &lt;= curr-&gt;data)&#123;</span><br><span class="line">			<span class="built_in">insert</span>(i,value);</span><br><span class="line">			<span class="keyword">return</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		curr = curr-&gt;next;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">insert</span>(size,value);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   <span class="type">int</span> n ;<span class="type">int</span> m;</span><br><span class="line">	<span class="keyword">while</span>( cin &gt;&gt; n &gt;&gt; m )&#123;</span><br><span class="line">		<span class="keyword">if</span>( !n &amp;&amp; !m) <span class="keyword">break</span>;</span><br><span class="line">		LinkedList l;</span><br><span class="line">		<span class="keyword">while</span>(n--)&#123;</span><br><span class="line">			<span class="type">int</span> v;</span><br><span class="line">			cin &gt;&gt; v;</span><br><span class="line">			l.<span class="built_in">append</span>(v);</span><br><span class="line">		&#125;</span><br><span class="line">		l.<span class="built_in">asInsert</span>(m);</span><br><span class="line">		l.<span class="built_in">print</span>();</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<p><strong>超级楼梯</strong><br>Time Limit: 2000&#x2F;1000 MS (Java&#x2F;Others)    Memory Limit: 65536&#x2F;32768 K (Java&#x2F;Others)<br>Total Submission(s): 126047    Accepted Submission(s): 64726</p>
+<p><strong>Problem Description</strong><br>有一楼梯共M级，刚开始时你在第一级，若每次只能跨上一级或二级，要走上第M级，共有多少种走法？</p>
+<p><strong>Input</strong><br>输入数据首先包含一个整数N，表示测试实例的个数，然后是N行数据，每行包含一个整数M（1&lt;&#x3D;M&lt;&#x3D;40）,表示楼梯的级数。</p>
+<p><strong>Output</strong><br>对于每个测试实例，请输出不同走法的数量</p>
+<p><strong>Sample Input</strong><br>2<br>2<br>3</p>
+<p><strong>Sample Output</strong><br>1<br>2                                                                             </p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">	<span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   	LinkedList l;</span><br><span class="line">	l.<span class="built_in">insert</span>(<span class="number">0</span>,<span class="number">1</span>);</span><br><span class="line">	l.<span class="built_in">insert</span>(<span class="number">1</span>,<span class="number">1</span>);</span><br><span class="line">	l.<span class="built_in">insert</span>(<span class="number">2</span>,<span class="number">1</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">3</span>;i&lt;=<span class="number">40</span>;++i)&#123;</span><br><span class="line">			ListNode *a = l.<span class="built_in">get</span>(i<span class="number">-1</span>);</span><br><span class="line">			ListNode *b = l.<span class="built_in">get</span>(i<span class="number">-2</span>);</span><br><span class="line">		l.<span class="built_in">insert</span>(i,a-&gt;data + b-&gt;data);</span><br><span class="line">	&#125;</span><br><span class="line">	l.<span class="built_in">print</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="type">int</span>  n;</span><br><span class="line">	cin &gt;&gt; n;</span><br><span class="line">	<span class="keyword">while</span>(n--)&#123;</span><br><span class="line">		<span class="type">int</span> x;</span><br><span class="line">		cin &gt;&gt; x;</span><br><span class="line">		cout &lt;&lt;l.<span class="built_in">get</span>(x)-&gt;data &lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">   </span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>在链表 L 中 为1 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765 10946 17711 28657 46368 75025 121393 196418 317811 514229 832040 1346269 2178309 3524578 5702887 9227465 14930352 24157817 39088169 63245986 102334155 </p>
+</blockquote>
+<p>不过我觉得应该一层有一种方法 2层有两种上法（一步一节，一步两节）航电这里从第二层算是一种上法。。。</p>
+]]></content>
+      <categories>
+        <category>重学数据结构</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据结构（C++）第二节</title>
+    <url>/2024/02/04/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88C-%EF%BC%89%E7%AC%AC%E4%BA%8C%E5%A4%A9/</url>
+    <content><![CDATA[<h1 id="重生之（重新）学习数据结构–第二天"><a href="#重生之（重新）学习数据结构–第二天" class="headerlink" title="重生之（重新）学习数据结构–第二天"></a>重生之（重新）学习数据结构–第二天</h1><h1 id="顺序表"><a href="#顺序表" class="headerlink" title="顺序表"></a>顺序表</h1><blockquote>
+<p>定义：把逻辑上相邻的结点储存在物理位置上的相邻储存单元中，结点的逻辑关系由储存单元的邻接关系来体现.</p>
+</blockquote>
+<p>通俗来讲，顺序表就是把线性表中的所有元素按照其逻辑顺序，依次储存到从指定的储存位置开始的一块连续的储存空间中。第一个元素的储存位置就是指定的储存位置，第 i+1 个元素的储存位置在第 i 个元素后面</p>
+<p> 上面的都不重要，既然是重新学习，我们知道无非是些增删改查之类，接下来用C++写一个自己的顺序表。</p>
+<h2 id="顺序表代码的实现"><a href="#顺序表代码的实现" class="headerlink" title="顺序表代码的实现"></a>顺序表代码的实现</h2><p>一步一步来很容易</p>
+<h3 id="先定义和初始化"><a href="#先定义和初始化" class="headerlink" title="先定义和初始化"></a>先定义和初始化</h3> <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> eleType int</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">SequentialList</span></span><br><span class="line">&#123;</span><br><span class="line">    eleType* elements;</span><br><span class="line">    <span class="type">int</span> size;<span class="comment">//顺序表大小</span></span><br><span class="line">    <span class="type">int</span> capacity;<span class="comment">//最大容量</span></span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//初始化</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">initializeList</span><span class="params">(SequentialList *list, <span class="type">int</span> capacity)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    list-&gt;elements = <span class="keyword">new</span> eleType[capacity];</span><br><span class="line">    list-&gt;size = <span class="number">0</span>;</span><br><span class="line">    list-&gt;capacity = capacity;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="顺序表的删除，长度的判断，判空"><a href="#顺序表的删除，长度的判断，判空" class="headerlink" title="顺序表的删除，长度的判断，判空"></a>顺序表的删除，长度的判断，判空</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">destroyList</span><span class="params">(SequentialList *list)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">delete</span>[] list-&gt;elements;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">size</span><span class="params">(SequentialList *list)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> list-&gt;size;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">isEmpty</span><span class="params">(SequentialList *list)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> list-&gt;size == <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="顺序表的的插入"><a href="#顺序表的的插入" class="headerlink" title="顺序表的的插入"></a>顺序表的的插入</h3><p>这里比较复杂</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">insert</span><span class="params">(SequentialList *list, <span class="type">int</span> index, eleType element)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//首先我们判断插入位置是不是存在，不存在报错</span></span><br><span class="line">    <span class="keyword">if</span> (index &lt; <span class="number">0</span> || index &gt; list-&gt;size)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">throw</span> std::<span class="built_in">invalid_argument</span>(<span class="string">&quot;Invalid index&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//接下来考虑，顺序表中的空间还够用吗，如果不够需要扩容，就是增大capacity，当ist-&gt;size == list-&gt;capacity时，发现需要扩容。</span></span><br><span class="line">    <span class="keyword">if</span> (list-&gt;size == list-&gt;capacity)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">//定义一个新的存储大小和新的数组</span></span><br><span class="line">        <span class="type">int</span> newCapacity = list-&gt;capacity * <span class="number">2</span>;</span><br><span class="line">        eleType* newElements = <span class="keyword">new</span> eleType[newCapacity];</span><br><span class="line">        <span class="comment">//把之前顺序表中的数据遍历到新的顺序表中</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; list-&gt;size; ++i)</span><br><span class="line">        &#123;</span><br><span class="line">            newElements[i] = list-&gt;elements[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//删除旧的顺序表，释放内存空间</span></span><br><span class="line">        <span class="keyword">delete</span>[] list-&gt;elements;</span><br><span class="line">        <span class="comment">//再把它指向新的内存空间，也就是新的数据表</span></span><br><span class="line">        list-&gt;elements = newElements;</span><br><span class="line">        list-&gt;capacity = newCapacity;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//接下来插入新的元素</span></span><br><span class="line">    <span class="comment">//先把插入位置的元素和后面的元素都往后推一位</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = list-&gt;size; i &gt; index; --i)</span><br><span class="line">    &#123;</span><br><span class="line">        list-&gt;elements[i] = list-&gt;elements[i - <span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//插入</span></span><br><span class="line">    list-&gt;elements[index] = element;</span><br><span class="line">    list-&gt;size++;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="删除顺序表中下表为index的元素"><a href="#删除顺序表中下表为index的元素" class="headerlink" title="删除顺序表中下表为index的元素"></a>删除顺序表中下表为index的元素</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">deleteElement</span><span class="params">(SequentialList *list, <span class="type">int</span> index)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//和之前一样判断index存不存在 这里index 不能等于 list-size |例如：list-&gt;size 是3 ；index只能为 0 1 2 </span></span><br><span class="line">    <span class="keyword">if</span> (index &lt; <span class="number">0</span> || index &gt;= list-&gt;size)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">throw</span> std::<span class="built_in">invalid_argument</span>(<span class="string">&quot;Invalid index&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = index; i &lt; list-&gt;size - <span class="number">1</span>; ++i)</span><br><span class="line">    &#123;</span><br><span class="line">        list-&gt;elements[i] = list-&gt;elements[i + <span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    list-&gt;size--;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="查找是否有元素，有返回下标"><a href="#查找是否有元素，有返回下标" class="headerlink" title="查找是否有元素，有返回下标"></a>查找是否有元素，有返回下标</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">findElement</span><span class="params">(SequentialList *list, eleType element)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; list-&gt;size; ++i)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (list-&gt;elements[i] == element)</span><br><span class="line">            <span class="keyword">return</span> i;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="元素的索引"><a href="#元素的索引" class="headerlink" title="元素的索引"></a>元素的索引</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">//返回元素 eleType</span></span><br><span class="line">eleType <span class="title function_">getElement</span><span class="params">(SequentialList *<span class="built_in">list</span>, <span class="type">int</span> index)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> (index &lt; <span class="number">0</span> || index &gt;= <span class="built_in">list</span>-&gt;size)</span><br><span class="line">    &#123;</span><br><span class="line">        throw <span class="built_in">std</span>::invalid_argument(<span class="string">&quot;Invalid index&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">list</span>-&gt;elements[index];</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="元素更新"><a href="#元素更新" class="headerlink" title="元素更新"></a>元素更新</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">updateElement</span><span class="params">(SequentialList *<span class="built_in">list</span>, <span class="type">int</span> index, eleType value)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> (index &lt; <span class="number">0</span> || index &gt;= <span class="built_in">list</span>-&gt;size)</span><br><span class="line">    &#123;</span><br><span class="line">        throw <span class="built_in">std</span>::invalid_argument(<span class="string">&quot;Invalid index&quot;</span>);      </span><br><span class="line">    &#125;</span><br><span class="line">	     <span class="built_in">list</span>-&gt;elements[index] = value;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="验证是否正确"><a href="#验证是否正确" class="headerlink" title="验证是否正确"></a>验证是否正确</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//创建一个顺序表</span></span><br><span class="line">    SequentialList myList;</span><br><span class="line">    <span class="comment">//初始化</span></span><br><span class="line">    initializeList(&amp;myList, <span class="number">10</span>);</span><br><span class="line">    <span class="comment">//遍历一下 内容为 10 20 30 .。。</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; ++i)</span><br><span class="line">    &#123;</span><br><span class="line">        insert(&amp;myList, i, i * <span class="number">10</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//输出当前顺序表的长度  size ：10</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;size：&quot;</span> &lt;&lt; size(&amp;myList) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="comment">//判空  Is empty: 0</span></span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Is empty:&quot;</span> &lt;&lt; isEmpty(&amp;myList) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	</span><br><span class="line">    <span class="comment">//测试元素索引 遍历结果应该为 0 10 20 30 40 50 60 70 80 90</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i &lt;size(&amp;myList); ++i)&#123;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt;getElement(&amp;myList,i) &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//删除 修改</span></span><br><span class="line">	deleteElement (&amp;myList,<span class="number">5</span>);</span><br><span class="line">	updateElement (&amp;myList,<span class="number">1</span> ,<span class="number">144</span>);</span><br><span class="line">	</span><br><span class="line">    <span class="comment">//遍历结果应该为 0 144 20 30 40 60 70 80 90</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i &lt;size(&amp;myList); ++i)&#123;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt;getElement(&amp;myList,i) &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="comment">// 应该为 2</span></span><br><span class="line">	<span class="type">int</span> idx = findElement(&amp;myList,<span class="number">20</span>);</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; idx &lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//0 144 520 30 40 60 70 80 90 </span></span><br><span class="line">	updateElement (&amp;myList,idx ,<span class="number">520</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i &lt;size(&amp;myList); ++i)&#123;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt;getElement(&amp;myList,i) &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	destroyList(&amp;myList );</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>我们可以将所有代码放在<a href="https://www.jyshare.com/compile/12/?stdin=1">菜鸟在线编辑器</a>其中测试。</p>
+<p><img src="/medias/images/%7B05A008E3-A9C5-4cb6-A16F-E944ECD5F6E8%7D.png" alt="sequence01" title="sequence01"></p>
+<p>正确，一个属于你自己的顺序表就做好了。</p>
+]]></content>
+      <categories>
+        <category>重学数据结构</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据结构（c++）第六节</title>
+    <url>/2024/02/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88C++%EF%BC%89%E7%AC%AC%E5%85%AD%E8%8A%82/</url>
+    <content><![CDATA[<h1 id="重生之（重新）学习数据结构–第六天-之-链表实战"><a href="#重生之（重新）学习数据结构–第六天-之-链表实战" class="headerlink" title="重生之（重新）学习数据结构–第六天 之 链表实战"></a>重生之（重新）学习数据结构–第六天 之 链表实战</h1><h2 id="1-快慢指针"><a href="#1-快慢指针" class="headerlink" title="1 快慢指针"></a>1 快慢指针</h2><blockquote>
+<p>面试题 02.02. <strong>返回倒数第 k 个节点</strong><br><strong>实现一种算法，找出单向链表中倒数第 k 个节点。返回该节点的值。<br>注意：本题相对原题稍作改动</strong><br><strong>示例：</strong><br><strong>输入：</strong> 1-&gt;2-&gt;3-&gt;4-&gt;5 和 k &#x3D; 2<br><strong>输出：</strong> 4<br><strong>说明：</strong> 给定的 k 保证是有效的</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * struct ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode *next;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) : val(x), next(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line">public:</span><br><span class="line">    <span class="type">int</span> <span class="title function_">kthToLast</span><span class="params">(ListNode* head, <span class="type">int</span> k)</span> &#123;</span><br><span class="line">        </span><br><span class="line">        ListNode* fast = head;</span><br><span class="line">        <span class="keyword">while</span>(k--)&#123;</span><br><span class="line">            fast = fast-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">         ListNode* slow = head;</span><br><span class="line">        <span class="keyword">while</span>(fast)&#123;</span><br><span class="line">             fast = fast-&gt;next;</span><br><span class="line">             slow = slow-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> slow-&gt;val;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>思路</strong> </p>
+<blockquote>
+<p>双指针<br>定义一个快指针，指向头部，先向前走步，这时候在定义一个慢指针也指向头步，现在一起走，当快指针走到尾步时，慢指针就是倒数第K个值</p>
+</blockquote>
+<p><strong>例题 1</strong></p>
+<blockquote>
+<p>LCR 140. 训练计划 II<br>给定一个头节点为 head 的链表用于记录一系列核心肌群训练项目编号，请查找并返回倒数第 cnt 个训练项目编号。</p>
+</blockquote>
+<p>示例 1：</p>
+<p>输入：head &#x3D; [2,4,7,8], cnt &#x3D; 1<br>输出：8</p>
+<p>代码略</p>
+<p><strong>例题 2</strong> <strong>链表的中间结点</strong></p>
+<p>给你单链表的头结点 head ，请你找出并返回链表的中间结点。<br>如果有两个中间结点，则返回第二个中间结点。</p>
+<p>示例 1：</p>
+<p>输入：head &#x3D; [1,2,3,4,5]<br>输出：[3,4,5]<br>解释：链表只有一个中间结点，值为 3 。<br>示例 2：</p>
+<p>输入：head &#x3D; [1,2,3,4,5,6]<br>输出：[4,5,6]<br>解释：该链表有两个中间结点，值分别为 3 和 4 ，返回第二个结点。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * struct ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode *next;</span></span><br><span class="line"><span class="comment"> *     ListNode() : val(0), next(nullptr) &#123;&#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) : val(x), next(nullptr) &#123;&#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x, ListNode *next) : val(x), next(next) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line">public:</span><br><span class="line">    ListNode* <span class="title function_">middleNode</span><span class="params">(ListNode* head)</span> &#123;</span><br><span class="line">        ListNode* fast = head;</span><br><span class="line">        ListNode* slow = head;</span><br><span class="line">        <span class="keyword">while</span>(fast)&#123;</span><br><span class="line">            fast = fast-&gt;next;</span><br><span class="line">            <span class="keyword">if</span>(fast == <span class="literal">NULL</span>)&#123;</span><br><span class="line">                <span class="keyword">return</span> slow;</span><br><span class="line">            &#125;</span><br><span class="line">             fast = fast-&gt;next;</span><br><span class="line">            <span class="keyword">if</span>(fast == <span class="literal">NULL</span>)&#123;</span><br><span class="line">                <span class="keyword">return</span> slow-&gt;next;</span><br><span class="line">            &#125;</span><br><span class="line">            slow = slow-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><strong>例题3</strong> <strong>删除中间节点</strong></p>
+<p>若链表中的某个节点，既不是链表头节点，也不是链表尾节点，则称其为该链表的「中间节点」。<br>假定已知链表的某一个中间节点，请实现一种算法，将该节点从链表中删除。<br>例如，传入节点 c（位于单向链表 a-&gt;b-&gt;c-&gt;d-&gt;e-&gt;f 中），将其删除后，剩余链表为 a-&gt;b-&gt;d-&gt;e-&gt;f</p>
+<p><strong>示例：</strong></p>
+<blockquote>
+<p>输入：节点 5 （位于单向链表 4-&gt;5-&gt;1-&gt;9 中）<br>输出：不返回任何数据，从链表中删除传入的节点 5，使链表变为 4-&gt;1-&gt;9</p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * struct ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode *next;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) : val(x), next(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">deleteNode</span><span class="params">(ListNode* node)</span> </span>&#123;</span><br><span class="line">        node-&gt;val = node-&gt;next-&gt;val;</span><br><span class="line">        node-&gt;next = node-&gt;next-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>重学数据结构</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据结构（C++）第一节</title>
+    <url>/2024/02/03/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88C-%EF%BC%89%E7%AC%AC%E4%B8%80%E8%8A%82/</url>
+    <content><![CDATA[<h1 id="重生之（重新）学习数据结构–第一天"><a href="#重生之（重新）学习数据结构–第一天" class="headerlink" title="重生之（重新）学习数据结构–第一天"></a>重生之（重新）学习数据结构–第一天</h1><blockquote>
+<p>嘿嘿，大学数据结构课程没有好好学习，对数据结构的印象感到模糊，当时也只为了应付考试，虽然考的不错，但感觉很多纰漏，打算用C++重头来过，每一次的重新学习，相信都会有新的感悟。</p>
+</blockquote>
+<h2 id="概括"><a href="#概括" class="headerlink" title="概括"></a>概括</h2><p>数据结构和算法是计算机学科中两个非常重要的概念，他们相辅相成，缺一不可。</p>
+<p>数据结构是指数据的组成和存储方式，它决定了数据的逻辑结构和物理结构。</p>
+<p>算法是解决问题的步骤和方法，它决定的数据的执行效率和正确性，一个高效的算法，应该具备，高效性，简洁性，正确性，可维护性。</p>
+<h2 id="一-时间复杂度"><a href="#一-时间复杂度" class="headerlink" title="一 .时间复杂度"></a>一 .时间复杂度</h2><h3 id="一-穷举法"><a href="#一-穷举法" class="headerlink" title="一.穷举法"></a>一.穷举法</h3><h4 id="1-单层循环"><a href="#1-单层循环" class="headerlink" title="1.单层循环"></a>1.单层循环</h4><blockquote>
+<p>所谓穷举法，就是通常所说的枚举，暴力求解，就是把所有情况都跑一边，举一个栗子：<strong>给定 n（n&lt;&#x3D; 1000  ）个元素ai,求其中奇数有多少个？</strong></p>
+</blockquote>
+<p>非常ez，只需要判断除2取余为0还是1</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> count0dd（<span class="type">int</span> n，<span class="type">int</span> a[]）&#123;</span><br><span class="line">    <span class="type">int</span> cnt = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; ++ i)&#123;</span><br><span class="line">        <span class="keyword">if</span>(a[i]&amp;<span class="number">1</span>)</span><br><span class="line">        ++cnt;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> cnt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>其中a&amp;1等价于a%2.代表a模2的余数</li>
+</ul>
+<p>其时间复杂度与n相关，n越大，运算时间越长，他就是一个O(n)的时间复杂度。</p>
+<h4 id="2-双层循环"><a href="#2-双层循环" class="headerlink" title="2.双层循环"></a>2.双层循环</h4><blockquote>
+<p>就是循环套循环 再来个题</p>
+</blockquote>
+<p><strong>给定 n（n&lt;&#x3D; 1000  ）个元素ai,求有几个二元组，满足ai + aj 是奇数？</strong></p>
+<p>两个ez，将两个循环嵌套，将遍历的数相加判断奇偶，代码如下</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> count0ddTwoEz（<span class="type">int</span> n，<span class="type">int</span> a[]）&#123;</span><br><span class="line">    <span class="type">int</span> cnt = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; ++ i)&#123;</span><br><span class="line">        <span class="keyword">for</span>(j = i+<span class="number">1</span>;j&lt;n;++j&gt;)&#123;</span><br><span class="line">                <span class="keyword">if</span>(a[i]+a[j] &amp; <span class="number">1</span>)</span><br><span class="line">                ++cnt;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> cnt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这时候观察，他是时间复杂度，就是n里还有个n，就是O（$n^2$）</p>
+<h4 id="3-三层循环"><a href="#3-三层循环" class="headerlink" title="3.三层循环"></a>3.三层循环</h4><blockquote>
+<p>套娃</p>
+</blockquote>
+<p><strong>给定 n（n&lt;&#x3D; 1000  ）个元素ai,求有几个三元组，满足ai + aj +ak是奇数？</strong></p>
+<p>3个ez，将3个循环嵌套，将遍历的数相加判断奇偶，代码如下</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> count0ddThEz（<span class="type">int</span> n，<span class="type">int</span> a[]）&#123;</span><br><span class="line">    <span class="type">int</span> cnt = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; ++ i)&#123;</span><br><span class="line">        <span class="keyword">for</span>(j = i+<span class="number">1</span>;j&lt;n;++j&gt;)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> k = j+<span class="number">1</span>;K &lt; n;++k)&#123;</span><br><span class="line">                <span class="keyword">if</span>(a[i]+a[j]+a[k] &amp; <span class="number">1</span>)</span><br><span class="line">                ++cnt;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> cnt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这时候观察，他是时间复杂度，就是n里还有个n，就是O（$n^3$）</p>
+<h4 id="4-递归循环"><a href="#4-递归循环" class="headerlink" title="4.递归循环"></a>4.递归循环</h4><p>继续增加元数，如果求1000元组怎么办，不能嵌套1000次,指数倍增的时间复杂度望尘莫及。</p>
+<p>我们采用递归的方法</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> dfs（<span class="type">int</span> n，<span class="type">int</span> a[] ,<span class="type">int</span> start ,<span class="type">int</span> k,<span class="type">int</span> sum）&#123;</span><br><span class="line">   <span class="keyword">if</span>(k == <span class="number">0</span>)</span><br><span class="line">     <span class="keyword">return</span> (sum&amp;<span class="number">1</span>)?<span class="number">0</span>:<span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> s = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = start;i&lt;n; ++i&gt;)</span><br><span class="line">       s += <span class="built_in">dfs</span>(n,i+<span class="number">1</span>,k<span class="number">-1</span>,sum + a[i]);</span><br><span class="line">    <span class="keyword">return</span> s;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>递归忘记先跳过</p>
+<h2 id="二-时间复杂度"><a href="#二-时间复杂度" class="headerlink" title="二 .时间复杂度"></a>二 .时间复杂度</h2><h3 id="1-时间复杂度的表示"><a href="#1-时间复杂度的表示" class="headerlink" title="1.时间复杂度的表示"></a>1.时间复杂度的表示</h3><blockquote>
+<p>T(n) &#x3D; O(f(n))</p>
+</blockquote>
+<p> T(n)就是语句总执行次数，随n变化。<br> f(n)就是关于n的函数</p>
+<p> 在上面的例子中<br> 函数分别是一个一次，二次，三次函数</p>
+<p> <img src="/medias/images/ThreeFx.png" alt="three fx" title="three fx"></p>
+<p>可以观察到，大O的表示法对其做了简化，这是用了高阶无穷小。</p>
+<ul>
+<li>f（n）&#x3D; n(n-1)&#x2F;2</li>
+</ul>
+<p>对于它来说 一部分就是n^2，一部分n，比较起来是小巫见大巫。</p>
+<p>  所以他的复杂度 T（n） &#x3D; O（f（n））</p>
+<p>   &#x3D;o((n^2)&#x2F;2 - n&#x2F;2)</p>
+<p>   &#x3D;O（n^2）</p>
+<p>我们通常定一个标准，时间复杂度的大小尽量不超过10^6.</p>
+<p>所以 <img src="/medias/images/%7BC9B7F1E3-B63F-4158-A6FE-EE40A040CDA5%7D.png" alt="guilu" title="gongshi"></p>
+]]></content>
+      <categories>
+        <category>重学数据结构</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据结构（c++）第三天</title>
+    <url>/2024/02/04/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88c-%EF%BC%89%E7%AC%AC%E4%B8%89%E5%A4%A9/</url>
+    <content><![CDATA[<h1 id="重生之（重新）学习数据结构–第三天-之顺序表的实战篇"><a href="#重生之（重新）学习数据结构–第三天-之顺序表的实战篇" class="headerlink" title="重生之（重新）学习数据结构–第三天 之顺序表的实战篇"></a>重生之（重新）学习数据结构–第三天 之顺序表的实战篇</h1><h2 id="顺序表的实战"><a href="#顺序表的实战" class="headerlink" title="顺序表的实战"></a>顺序表的实战</h2><blockquote>
+<p>接下来的题目都来在航电官网中的编程题目。</p>
+</blockquote>
+<h3 id="1-求奇数的乘积"><a href="#1-求奇数的乘积" class="headerlink" title="1.求奇数的乘积"></a>1.求奇数的乘积</h3><p>Time Limit: 2000&#x2F;1000 MS (Java&#x2F;Others)    Memory Limit: 65536&#x2F;32768 K (Java&#x2F;Others)<br>Total Submission(s): 196436    Accepted Submission(s): 115241</p>
+<p><strong>Problem Description</strong><br>给你n个整数，求他们中所有奇数的乘积。</p>
+<p><strong>Input</strong><br>输入数据包含多个测试实例，每个测试实例占一行，每行的第一个数为n，表示本组数据一共有n个，接着是n个整数，你可以假设每组数据必定至少存在一个奇数。</p>
+<p><strong>Output</strong><br>输出每组数中的所有奇数的乘积，对于测试实例，输出一行。</p>
+<p><strong>Sample Input</strong><br>3 1 2 3<br>4 2 3 4 5</p>
+<p><strong>Sample Output</strong><br>3<br>15</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">//。。上接上一节自己写的顺序表 main删除</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">  <span class="comment">//我们可以到，每行第一个数字是当前该组元素的个数,每行第一个数字定位n</span></span><br><span class="line">      <span class="type">int</span> n;</span><br><span class="line">      <span class="keyword">while</span>(<span class="built_in">cin</span> &gt;&gt; n)</span><br><span class="line">      &#123;<span class="comment">//创建自己的顺序表</span></span><br><span class="line">          SequentList s;</span><br><span class="line">          initializeList( &amp;s,<span class="number">1</span>);</span><br><span class="line">          <span class="comment">//插入</span></span><br><span class="line">          <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span> ; i &lt; n&gt;; ++i)</span><br><span class="line">          &#123;</span><br><span class="line">              <span class="type">int</span> x;</span><br><span class="line">              <span class="built_in">cin</span> &gt;&gt; x;</span><br><span class="line">              insert(&amp;s,i,x);</span><br><span class="line">          &#125;</span><br><span class="line">          <span class="comment">//s.size == n</span></span><br><span class="line">          <span class="type">int</span> prod = <span class="number">1</span>;</span><br><span class="line">          <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i&lt;s.size;++i)</span><br><span class="line">          &#123;   <span class="comment">//获取元素</span></span><br><span class="line">              <span class="type">int</span> val =(getElement(&amp;s,i));</span><br><span class="line">              <span class="comment">//判奇偶</span></span><br><span class="line">              <span class="keyword">if</span>(val%<span class="number">2</span> == <span class="number">1</span>)&#123;</span><br><span class="line">                  <span class="comment">//这里需要连乘</span></span><br><span class="line">                  prod = prod * val;</span><br><span class="line">              &#125;</span><br><span class="line">          &#125;</span><br><span class="line"></span><br><span class="line">          <span class="built_in">cout</span> &lt;&lt; prod &lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>测试是否正确，在对应<a href="https://acm.hdu.edu.cn/">航电官网</a>Problem Archive中提交。</p>
+<p>上面代码太多了，正常只需要定义一个大一点的数组</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">  <span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"> <span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    <span class="comment">//n = 0 结束</span></span><br><span class="line">    <span class="keyword">while</span>(cin &gt;&gt; n &amp;&amp; n)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">float</span> f_num = <span class="number">0</span>,zero = <span class="number">0</span>,z_num = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span> ; i &lt; n; ++i)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="type">int</span> x;</span><br><span class="line">                cin &gt;&gt; x;</span><br><span class="line">                <span class="keyword">if</span>(x &lt; <span class="number">0</span>)</span><br><span class="line">                 f_num++;</span><br><span class="line">                <span class="keyword">if</span>(x == <span class="number">0</span>)</span><br><span class="line">                 zero++;</span><br><span class="line">                <span class="keyword">if</span>(x &gt; <span class="number">0</span>)</span><br><span class="line">                 z_num++;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        cout &lt;&lt; f_num &lt;&lt;zero &lt;&lt; z_num &lt;&lt;endl;</span><br><span class="line">        f_num = zero = z_num = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">  </span><br></pre></td></tr></table></figure>
+
+
+<h3 id="数值统计"><a href="#数值统计" class="headerlink" title="数值统计"></a>数值统计</h3><p>Time Limit: 2000&#x2F;1000 MS (Java&#x2F;Others)    Memory Limit: 65536&#x2F;32768 K (Java&#x2F;Others)<br>Total Submission(s): 215152    Accepted Submission(s): 99683</p>
+<p><strong>Problem Description</strong><br>统计给定的n个数中，负数、零和正数的个数。</p>
+<p><strong>Input</strong><br>输入数据有多组，每组占一行，每行的第一个数是整数n（n&lt;100），表示需要统计的数值的个数，然后是n个实数；如果n&#x3D;0，则表示输入结束，该行不做处理。</p>
+<p><strong>Output</strong><br>对于每组输入数据，输出一行a,b和c，分别表示给定的数据中负数、零和正数的个数。</p>
+<p><strong>Sample Input</strong><br>6 0 1 2 3 -1 0<br>5 1 2 3 4 0.5<br>0 </p>
+<p><strong>Sample Output</strong><br>1 2 3<br>0 0 5</p>
+<p>可以用自己做的顺序表来做这道题，与上一道题相似，<br>初始 遍历 判断 既可以了<br> 可以参考下面的代码自行完成。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"> <span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"> <span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    <span class="comment">//n = 0 结束</span></span><br><span class="line">    <span class="keyword">while</span>(cin &gt;&gt; n &amp;&amp; n)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">float</span> f_num = <span class="number">0</span>,zero = <span class="number">0</span>,z_num = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span> ; i &lt; n; ++i)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="type">int</span> x;</span><br><span class="line">                cin &gt;&gt; x;</span><br><span class="line">                <span class="keyword">if</span>(x &lt; <span class="number">0</span>)</span><br><span class="line">                 f_num++;</span><br><span class="line">                <span class="keyword">if</span>(x == <span class="number">0</span>)</span><br><span class="line">                 zero++;</span><br><span class="line">                <span class="keyword">if</span>(x &gt; <span class="number">0</span>)</span><br><span class="line">                 z_num++;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        cout &lt;&lt; f_num &lt;&lt;zero &lt;&lt; z_num &lt;&lt;endl;</span><br><span class="line">        f_num = zero = z_num = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="青年歌手大奖赛-评委会打分"><a href="#青年歌手大奖赛-评委会打分" class="headerlink" title="青年歌手大奖赛_评委会打分"></a>青年歌手大奖赛_评委会打分</h3><p>Time Limit: 2000&#x2F;1000 MS (Java&#x2F;Others)    Memory Limit: 65536&#x2F;32768 K (Java&#x2F;Others)<br>Total Submission(s): 175519    Accepted Submission(s): 85579</p>
+<p><strong>Problem Description</strong><br>青年歌手大奖赛中，评委会给参赛选手打分。选手得分规则为去掉一个最高分和一个最低分，然后计算平均得分，请编程输出某选手的得分。</p>
+<p><strong>Input</strong><br>输入数据有多组，每组占一行，每行的第一个数是n(2&lt;n&lt;&#x3D;100)，表示评委的人数，然后是n个评委的打分。</p>
+<p><strong>Output</strong><br>对于每组输入数据，输出选手的得分，结果保留2位小数，每组输出占一行。</p>
+<p><strong>Sample Input</strong><br>3 99 98 97<br>4 100 99 98 97</p>
+<p><strong>Sample Output</strong><br>98.00<br>98.50</p>
+<blockquote>
+<p>思路 用之前的顺序表。将TypeElement 从int 改为 float<br>创建顺序表 遍历顺序表 定义一个最大数和最小数用作判断 最大可以是 101 最小 -1，在遍历顺序表的过程中判断并求和，</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> Max = <span class="number">-1</span> ; <span class="type">int</span> Min - <span class="number">101</span></span><br><span class="line"> <span class="keyword">if</span>(ele &gt; Max) Max = ele;</span><br><span class="line"> <span class="keyword">if</span>(ele &lt; Min) Min = ele;</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+<p>然后 （sum - Max -Min）&#x2F;（n-2）</p>
+]]></content>
+      <categories>
+        <category>重学数据结构</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一篇文章</title>
+    <url>/2024/02/02/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<h3 id="三个"><a href="#三个" class="headerlink" title="三个#"></a>三个#</h3>]]></content>
+  </entry>
+  <entry>
+    <title>数据结构（c++）第四天</title>
+    <url>/2024/02/05/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88c-%EF%BC%89%E7%AC%AC%E5%9B%9B%E5%A4%A9/</url>
+    <content><![CDATA[<h1 id="重生之（重新）学习数据结构–第四天-之顺序表-vector"><a href="#重生之（重新）学习数据结构–第四天-之顺序表-vector" class="headerlink" title="重生之（重新）学习数据结构–第四天 之顺序表-vector"></a>重生之（重新）学习数据结构–第四天 之顺序表-vector</h1><h2 id="vector-代码"><a href="#vector-代码" class="headerlink" title="vector 代码"></a>vector 代码</h2> <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span> </span></span><br><span class="line">using namespace <span class="built_in">std</span>;</span><br><span class="line"><span class="comment">//vector 向量 模板类 </span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;	</span><br><span class="line">   <span class="comment">// vector&lt;int&gt; ret;//这就相当一个空的顺序表</span></span><br><span class="line">	<span class="built_in">vector</span>&lt;<span class="type">int</span>&gt; ret = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i&lt;ret.size();++i)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; ret[i] &lt;&lt;<span class="string">&#x27; &#x27;</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	</span><br><span class="line">   <span class="built_in">cout</span> &lt;&lt; ret.size() &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">   ret.push_back(<span class="number">1024</span>);<span class="comment">//插入方法</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i&lt;ret.size();++i)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; ret[i] &lt;&lt;<span class="string">&#x27; &#x27;</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; ret.size() &lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;ret[<span class="number">0</span>]&lt;&lt;<span class="built_in">endl</span>;<span class="comment">//得到0位置的值</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	</span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="C-max-element-的使用"><a href="#C-max-element-的使用" class="headerlink" title="C++ max_element()的使用"></a>C++ max_element()的使用</h2><p><strong>C++ max_element()函数的使用</strong><br>max(a,b)，返回a,b两者之间的较大值<br>max_element(r, r+6),返回数组r中[0, 6)之间的最大值的迭代器，<br>使用max_element返回的值减去数组头地址即为该最大值在数组的序号<br>max_element前面加*为返回的值<br>min 和 min_element的区别同上，看到下面的例子你就会明白了</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> a[<span class="number">6</span>] = &#123;<span class="number">5</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">6</span>, <span class="number">1</span>, <span class="number">4</span>&#125;;</span><br><span class="line">	<span class="type">int</span> b = a[<span class="number">0</span>];</span><br><span class="line">	<span class="type">int</span> c = a[<span class="number">1</span>];</span><br><span class="line">	cout&lt;&lt;<span class="built_in">max</span>(b, c)&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;<span class="built_in">min</span>(b,c)&lt;&lt;endl; <span class="comment">//输出为5 3</span></span><br><span class="line">	cout&lt;&lt;<span class="built_in">max_element</span>(a, a+<span class="number">6</span>) - a&lt;&lt;endl;<span class="comment">// 输出为3 </span></span><br><span class="line">	cout&lt;&lt;*<span class="built_in">max_element</span>(a, a+<span class="number">6</span>)&lt;&lt;endl;<span class="comment">//输出为 6 </span></span><br><span class="line">	cout&lt;&lt;<span class="built_in">min_element</span>(a, a+<span class="number">6</span>) - a&lt;&lt;endl;<span class="comment">// 输出为4 </span></span><br><span class="line">	cout&lt;&lt;*<span class="built_in">min_element</span>(a, a+<span class="number">6</span>)&lt;&lt;endl;	 <span class="comment">//输出为1 </span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="LCP-01-猜数字"><a href="#LCP-01-猜数字" class="headerlink" title="LCP 01. 猜数字"></a>LCP 01. 猜数字</h2><p>简单</p>
+<p>小A 和 小B 在玩猜数字。小B 每次从 1, 2, 3 中随机选择一个，小A 每次也从 1, 2, 3 中选择一个猜。他们一共进行三次这个游戏，请返回 小A 猜对了几次？</p>
+<p>输入的guess数组为 小A 每次的猜测，answer数组为 小B 每次的选择。guess和answer的长度都等于3。</p>
+<p>示例 1：</p>
+<p>输入：guess &#x3D; [1,2,3], answer &#x3D; [1,2,3]<br>输出：3<br>解释：小A 每次都猜对了。<br>示例 2：</p>
+<p>输入：guess &#x3D; [2,2,3], answer &#x3D; [3,2,1]<br>输出：1<br>解释：小A 只猜对了第二次。</p>
+<p>限制：</p>
+<p>guess 的长度 &#x3D; 3<br>answer 的长度 &#x3D; 3<br>guess 的元素取值为 {1, 2, 3} 之一。<br>answer 的元素取值为 {1, 2, 3} 之一。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line">public:</span><br><span class="line">    <span class="type">int</span> <span class="title function_">game</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;&amp; guess, <span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;&amp; answer)</span> &#123;</span><br><span class="line">        <span class="type">int</span> res = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;size(guess);++i)&#123;</span><br><span class="line">            <span class="keyword">if</span> (guess[i]==answer[i]) res++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>重学数据结构</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>游戏开发日志</title>
+    <url>/2024/09/05/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>游戏开发日志</category>
+      </categories>
+      <tags>
+        <tag>QFramework笔记</tag>
+      </tags>
+  </entry>
+</search>
