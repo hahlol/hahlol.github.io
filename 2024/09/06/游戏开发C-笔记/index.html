@@ -4,20 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="QFramework, hahlol蛙">
-    <meta name="description" content="QFramework
-CoreKit
-CodeGenKit：代码生成工具，旨在节省编译时间。
-功能：
-字节点增加 Bind
-其他 Binds
-
-
-
-
-
-AB包（Asset Bundle）
-定义：Unity引擎中用于打包和管理游戏资源的一种机">
+    <meta name="keywords" content="游戏开发C#笔记, hahlol蛙">
+    <meta name="description" content="C#日常笔记const在C#中，const 关键字用于声明一个常量字段。常量是在编译时就已经确定其值的字段，并且这个值在程序的整个生命周期内都是不可变的。常量必须是编译时常量表达式，这意味着它们的值必须在编译时就能被计算出来，而不能依赖于运">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -29,7 +17,7 @@ AB包（Asset Bundle）
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>QFramework | hahlol蛙</title>
+    <title>游戏开发C#笔记 | hahlol蛙</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -346,12 +334,12 @@ AB包（Asset Bundle）
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">QFramework</h1>
+                    <h1 class="description center-align post-title">游戏开发C#笔记</h1>
                 </div>
             </div>
         </div>
@@ -375,8 +363,12 @@ AB包（Asset Bundle）
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%B8%B8%E6%88%8F%E6%A1%86%E6%9E%B6/">
-                                <span class="chip bg-color">游戏框架</span>
+                            <a href="/tags/C/">
+                                <span class="chip bg-color">C#</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/">
+                                <span class="chip bg-color">游戏开发日志</span>
                             </a>
                         
                     </div>
@@ -391,7 +383,7 @@ AB包（Asset Bundle）
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-02-03
+                    2024-09-06
                 </div>
                 
 
@@ -412,77 +404,59 @@ AB包（Asset Bundle）
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>QFramework</p>
-<h3 id="CoreKit"><a href="#CoreKit" class="headerlink" title="CoreKit"></a>CoreKit</h3><ul>
-<li><strong>CodeGenKit</strong>：代码生成工具，旨在节省编译时间。<ul>
-<li><strong>功能</strong>：<ul>
-<li>字节点增加 Bind</li>
-<li>其他 Binds</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="AB包（Asset-Bundle）"><a href="#AB包（Asset-Bundle）" class="headerlink" title="AB包（Asset Bundle）"></a>AB包（Asset Bundle）</h3><ul>
-<li><strong>定义</strong>：Unity引擎中用于打包和管理游戏资源的一种机制，全称为Asset Bundle。</li>
-<li><strong>作用</strong>：<ul>
-<li>有效地管理游戏资源</li>
-<li>实现资源的动态加载、卸载和热更新</li>
-<li>提升游戏的性能和开发效率</li>
-</ul>
-</li>
-</ul>
-<h3 id="在Player周围生成Enemy"><a href="#在Player周围生成Enemy" class="headerlink" title="在Player周围生成Enemy"></a>在Player周围生成Enemy</h3><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> player = Player.Default; <span class="comment">// 假设Player.Default是获取默认玩家的方法</span></span><br><span class="line"><span class="keyword">var</span> randomAngle = Random.Range(<span class="number">0</span>, <span class="number">360f</span>); <span class="comment">// 生成一个0到360度的随机角度</span></span><br><span class="line"><span class="keyword">var</span> randomRadius = randomAngle * Mathf.Deg2Rad; <span class="comment">// 将角度转换为弧度</span></span><br><span class="line"><span class="keyword">var</span> direction = <span class="keyword">new</span> Vector3(Mathf.Cos(randomRadius), <span class="number">0</span>, Mathf.Sin(randomRadius)); <span class="comment">// 计算方向向量（这里假设在XZ平面上）</span></span><br><span class="line"><span class="keyword">var</span> generatePos = player.transform.position + direction * <span class="number">10</span>; <span class="comment">// 在玩家周围10单位距离处生成位置</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 注意：这里假设Enemy的生成逻辑已经实现，并且需要你将Enemy实例化到generatePos位置</span></span><br></pre></td></tr></table></figure>
+                <h1 id="C-日常笔记"><a href="#C-日常笔记" class="headerlink" title="C#日常笔记"></a>C#日常笔记</h1><h2 id="const"><a href="#const" class="headerlink" title="const"></a>const</h2><p>在C#中，<code>const</code> 关键字用于声明一个常量字段。常量是在编译时就已经确定其值的字段，并且这个值在程序的整个生命周期内都是不可变的。常量必须是编译时常量表达式，这意味着它们的值必须在编译时就能被计算出来，而不能依赖于运行时的信息。</p>
+<h3 id="声明常量"><a href="#声明常量" class="headerlink" title="声明常量"></a>声明常量</h3><p>常量通常用于定义那些在整个程序中不会改变的值，比如数学中的π值、物理常量、或者应用程序的配置值（如果这些值在编译后不会改变的话）。</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">MyClass</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 声明一个常量</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">const</span> <span class="built_in">double</span> Pi = <span class="number">3.14159</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// ... 其他成员 ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="BindableProperty"><a href="#BindableProperty" class="headerlink" title="BindableProperty"></a>BindableProperty</h3><ul>
-<li><strong>概念</strong>：变量加上变量变更事件的组合，用于在变量值变化时通知监听者。</li>
+<p>在这个例子中，<code>Pi</code> 是一个 <code>double</code> 类型的常量，其值被设置为 <code>3.14159</code>。这个值在编译时就已经确定，并且在程序的整个生命周期内都不能被改变。</p>
+<h3 id="常量的特点"><a href="#常量的特点" class="headerlink" title="常量的特点"></a>常量的特点</h3><ol>
+<li><strong>不可变性</strong>：一旦常量被赋值，它的值就不能被改变。</li>
+<li><strong>编译时确定</strong>：常量的值必须在编译时就能确定，不能依赖于运行时的信息。</li>
+<li><strong>隐式静态</strong>：在C#中，常量隐式地是静态的，这意味着它们属于类型本身，而不是类型的任何特定实例。因此，你不需要（也不能）在常量声明中包含 <code>static</code> 关键字。</li>
+<li><strong>作用域</strong>：常量的作用域取决于它被声明的位置。如果常量是在类级别声明的，那么它就可以在该类的任何方法中访问。如果常量是在命名空间级别声明的（这通常是通过在文件中但不在任何类内部声明常量来实现的，尽管这不是C#的推荐做法），那么它就可以在该命名空间内的任何类中访问。</li>
+</ol>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ul>
+<li>尽管常量是不可变的，但如果常量是一个引用类型（如类、数组、字符串等），那么你不能改变常量本身指向的对象，但你可以改变对象的内部状态（如果对象是可变的）。然而，对于字符串来说，这是一个特殊情况，因为C#中的字符串是不可变的，所以你不能通过常量字符串引用去改变字符串的内容。</li>
+<li>由于常量的值在编译时就已经确定，因此它们不能依赖于运行时的信息或条件逻辑。如果你需要基于运行时信息来设置值，那么你应该考虑使用 <code>readonly</code> 字段而不是 <code>const</code> 常量。<code>readonly</code> 字段可以在构造函数或字段初始化器中设置值，但一旦设置，其值就不能在对象的生命周期内被改变。</li>
 </ul>
-<h3 id="常规方式"><a href="#常规方式" class="headerlink" title="常规方式"></a>常规方式</h3><p>首先，确保<code>BindableProperty&lt;T&gt;</code>类有适当的构造函数。这里我假设它有一个接受初始值和类型参数的构造函数：</p>
-<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">BindableProperty</span>&lt;<span class="title">T</span>&gt;</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> T Value &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">BindableProperty</span>(<span class="params">T initialValue</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Value = initialValue;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="switch的一个简洁书写方式"><a href="#switch的一个简洁书写方式" class="headerlink" title="switch的一个简洁书写方式"></a>switch的一个简洁书写方式</h2><p>这个表达方式是C# 8.0及更高版本中引入的<code>switch</code>表达式的一个应用实例。<code>switch</code>表达式允许您以一种更简洁和表达式友好的方式编写<code>switch</code>语句，并且它总是返回一个值（除非所有分支都抛出异常或显式地返回<code>null</code>）。</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="built_in">string</span> <span class="title">GetSkillDescription</span>(<span class="params"><span class="built_in">int</span> lv</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">return</span> lv <span class="keyword">switch</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="number">1</span> =&gt; <span class="string">$&quot;飞刀LV<span class="subst">&#123;lv&#125;</span>:\n向最近的敌人发射一把飞刀&quot;</span>,</span><br><span class="line">        <span class="number">2</span> =&gt; <span class="string">$&quot;飞刀LV<span class="subst">&#123;lv&#125;</span>:\n攻击力+3 数量+1&quot;</span>,</span><br><span class="line">        <span class="number">3</span> =&gt; <span class="string">$&quot;飞刀LV<span class="subst">&#123;lv&#125;</span>:\n攻击力+2 间隔-0.1s 数量+1&quot;</span>,</span><br><span class="line">        <span class="comment">// ...（其他case分支）</span></span><br><span class="line">        _ =&gt; <span class="literal">null</span></span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>然后，您可以这样定义您的属性：</p>
-<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> BindableProperty&lt;<span class="built_in">float</span>&gt; CurrectSeconds = <span class="keyword">new</span> BindableProperty&lt;<span class="built_in">float</span>&gt;(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span>  基础攻击力</span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> BindableProperty&lt;<span class="built_in">float</span>&gt; SimpleAbilityDamage = <span class="keyword">new</span> BindableProperty&lt;<span class="built_in">float</span>&gt;(Config.InitSimpleSwordDamage);</span><br><span class="line"></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span>  攻击间隔（速度）</span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> BindableProperty&lt;<span class="built_in">float</span>&gt; SimpleAbilityDuration = <span class="keyword">new</span> BindableProperty&lt;<span class="built_in">float</span>&gt;(Config.InitSimpleSwordDuration);</span><br><span class="line"></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> 简单剑的数量</span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> BindableProperty&lt;<span class="built_in">int</span>&gt; SimpleAbilitySwordCount = <span class="keyword">new</span> BindableProperty&lt;<span class="built_in">int</span>&gt;(Config.InitSimpleSwordCount);</span><br><span class="line"></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> 攻击距离</span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> BindableProperty&lt;<span class="built_in">float</span>&gt; SimpleAbilitySwordRange = <span class="keyword">new</span> BindableProperty&lt;<span class="built_in">float</span>&gt;(Config.InitSimpleSwordRange);</span><br></pre></td></tr></table></figure>
-
-<h3 id="可能的简化方式（非标准）"><a href="#可能的简化方式（非标准）" class="headerlink" title="可能的简化方式（非标准）"></a>可能的简化方式（非标准）</h3><p>在C#中，构造函数调用不能直接在字段声明中“简化”，就像您在<code>SimpleAbilitySwordCount</code>中尝试的那样。但是，如果您确实想要减少代码冗余，并且您的<code>BindableProperty&lt;T&gt;</code>类可以接受某种形式的工厂方法或静态方法来创建实例，那么您可以这样做。不过，这不是构造函数调用的简化，而是创建实例的方法的简化。</p>
-<p>例如，您可以添加一个静态方法来创建并返回<code>BindableProperty&lt;T&gt;</code>的实例：</p>
-<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title">BindableProperty</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 假设这是泛型类的一部分，或者是一个静态帮助类</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="title">BindableProperty</span>&lt;<span class="title">T</span>&gt; <span class="title">Create</span>&lt;<span class="title">T</span>&gt;(<span class="params">T initialValue</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> BindableProperty&lt;T&gt;(initialValue);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 然后您可以这样使用它：</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> BindableProperty&lt;<span class="built_in">float</span>&gt; CurrectSeconds = BindableProperty.Create(<span class="number">0</span>);</span><br><span class="line"><span class="comment">// ... 其余属性类似</span></span><br></pre></td></tr></table></figure>
-
-<p>但是，请注意，上面的<code>BindableProperty</code>类和方法应该与您的泛型<code>BindableProperty&lt;T&gt;</code>类分开，除非您打算将它们合并到一个类中，并且该类同时包含静态方法和泛型实例方法&#x2F;属性。</p>
-<p>在您的原始代码中，<code>SimpleAbilitySwordCount</code>的“简写”实际上是无效的C#语法。如果您想要类似的功能，您需要使用类似上面所示的方法或工厂函数。</p>
-<h3 id="RuntimeInitializeOnLoadMethod"><a href="#RuntimeInitializeOnLoadMethod" class="headerlink" title="RuntimeInitializeOnLoadMethod"></a>RuntimeInitializeOnLoadMethod</h3><ul>
-<li><strong>定义</strong>：Unity引擎中的一个特性（Attribute），用于标记一个方法，以便在Unity运行时自动调用。</li>
-<li><strong>用途</strong>：在Unity的初始化过程中执行某些操作，如初始化插件、注册回调、配置环境等。</li>
-<li><strong>使用</strong>：通过指定<code>RuntimeInitializeLoadType</code>枚举值来定义方法调用的时机。</li>
+<p>在这个例子中，<code>GetSkillDescription</code>方法接受一个整数<code>lv</code>作为参数，并返回与该等级对应的飞刀技能描述字符串，或者如果<code>lv</code>不在有效范围内，则返回<code>null</code>。</p>
+<p>在您提供的代码片段中，<code>lv</code>是一个变量，可能代表某种技能的等级（Level）。根据<code>lv</code>的值，<code>switch</code>表达式会选择一个分支，并返回与该分支关联的字符串。这个字符串描述了飞刀技能在对应等级下的效果。</p>
+<p>这里是代码的解释：</p>
+<ul>
+<li>如果<code>lv</code>等于1，则返回描述“飞刀LV1: 向最近的敌人发射一把飞刀”的字符串。</li>
+<li>如果<code>lv</code>等于2，则返回描述攻击力增加3且数量增加1的字符串。</li>
+<li>…（依此类推，直到等级10）</li>
+<li>如果<code>lv</code>的值不在1到10的范围内，则返回<code>null</code>。</li>
 </ul>
-<h3 id="Null条件运算符（-）"><a href="#Null条件运算符（-）" class="headerlink" title="Null条件运算符（?.）"></a>Null条件运算符（?.）</h3><ul>
-<li><strong>定义</strong>：在C#中用于在尝试访问对象的成员之前，先检查该对象是否为<code>null</code>。</li>
-<li><strong>使用场景</strong>：<ul>
-<li>属性访问</li>
-<li>方法调用</li>
-<li>索引器访问（需要额外的方括号<code>?[index]</code>）</li>
-</ul>
+<p>这种使用<code>switch</code>表达式的方式非常适合于需要基于单个变量（如这里的<code>lv</code>）的不同值来返回不同结果的情况。它不仅使代码更加简洁，而且提高了可读性和可维护性。</p>
+<h2 id="OrderBy-Take-where"><a href="#OrderBy-Take-where" class="headerlink" title="OrderBy() ,Take(), where();"></a>OrderBy() ,Take(), where();</h2><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">foreach</span> (<span class="keyword">var</span> enemy <span class="keyword">in</span> enemies.OrderBy(e=&gt;e.Direction2DFrom(Player.Default).magnitude)</span><br><span class="line">		.Take(Global.SimpleAbilitySwordCount.Value))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这段代码的作用是从一个名为<code>enemies</code>的集合中，按照每个敌人相对于<code>Player.Default</code>的二维方向向量的模（即距离）进行排序，并取排序后距离玩家最近的<code>Global.SimpleAbilitySwordCount.Value</code>个敌人进行遍历。这里的<code>enemies</code>可能是一个包含敌人对象的集合，每个敌人对象都有一个<code>Direction2DFrom</code>方法，该方法接受一个点（这里是<code>Player.Default</code>，代表玩家的默认位置）作为参数，返回一个表示从该点到敌人位置的二维方向向量的<code>Vector2</code>对象。然后，通过调用<code>magnitude</code>属性获取这个向量的模，即距离。</p>
+<p>具体来说，这段代码做了以下几件事：</p>
+<ol>
+<li><p><code>enemies.OrderBy(e =&gt; e.Direction2DFrom(Player.Default).magnitude)</code>: 对<code>enemies</code>集合中的元素进行排序。排序的依据是每个敌人到<code>Player.Default</code>的二维方向向量的模（即距离）。这样，距离玩家最近的敌人会排在前面。</p>
 </li>
-<li><strong>优点</strong>：<ul>
-<li>简化代码</li>
-<li>提高安全性，避免<code>NullReferenceException</code></li>
-</ul>
+<li><p><code>.Take(Global.SimpleAbilitySwordCount.Value)</code>: 从排序后的敌人列表中取出前<code>Global.SimpleAbilitySwordCount.Value</code>个元素。<code>Global.SimpleAbilitySwordCount.Value</code>可能是一个全局变量或配置，表示某种能力（如简单剑技）能够影响的敌人数量上限。</p>
 </li>
-<li><strong>注意事项</strong>：<ul>
-<li>不能用于执行赋值操作或其他需要返回值的操作</li>
-<li>可能需要结合使用<code>?.</code>和<code>??</code>运算符来处理更复杂的逻辑</li>
-</ul>
+<li><p><code>foreach (var enemy in ...)</code>: 对上一步取出的敌人列表进行遍历。在遍历过程中，可以对每个敌人执行一些操作，比如攻击它们。</p>
 </li>
-</ul>
-<h3 id="存档系统"><a href="#存档系统" class="headerlink" title="存档系统"></a>存档系统</h3><ul>
-<li><strong>概念</strong>：游戏中用于保存和加载游戏进度的系统。</li>
-</ul>
-<h3 id="Magnitude（两物体之间的长度）"><a href="#Magnitude（两物体之间的长度）" class="headerlink" title="Magnitude（两物体之间的长度）"></a>Magnitude（两物体之间的长度）</h3><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> enemy = enemies.OrderBy(enemy =&gt; (Player.Default.transform.position - enemy.transform.position).magnitude)</span><br><span class="line">                   .FirstOrDefault();</span><br><span class="line"><span class="comment">// 这段代码的作用是从enemies集合中找到距离Player.Default最近的一个enemy，并返回它。</span></span><br><span class="line"><span class="comment">// magnitude用于计算两点之间的距离。</span></span><br></pre></td></tr></table></figure>
+</ol>
+<p>总结来说，这段代码的目的是选择距离玩家最近的<code>Global.SimpleAbilitySwordCount.Value</code>个敌人，并对它们进行遍历处理。这在游戏中常用于实现一些基于距离判断的技能或攻击效果。</p>
+<h2 id="where"><a href="#where" class="headerlink" title="where();"></a>where();</h2><p>在C#中，<code>where()</code> 方法是LINQ（Language Integrated Query）的一部分，用于对集合中的元素进行筛选。它通常与IEnumerable<T>或IQueryable<T>等接口一起使用，以创建一个新的集合，该集合仅包含满足指定条件的元素。<code>where()</code> 方法不会修改原始集合，而是返回一个新的集合视图，其中包含所有满足条件的元素。</p>
+<p><code>where()</code> 方法接受一个lambda表达式作为参数，该表达式定义了筛选条件。Lambda表达式通常具有一个或多个输入参数，并返回一个布尔值，表示元素是否应包含在结果集中。</p>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><p>假设我们有一个包含整数的列表，我们想要筛选出所有大于5的元素：</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> System.Collections.Generic;</span><br><span class="line"><span class="keyword">using</span> System.Linq;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        List&lt;<span class="built_in">int</span>&gt; numbers = <span class="keyword">new</span> List&lt;<span class="built_in">int</span>&gt; &#123; <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">10</span> &#125;;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 使用 where() 方法筛选大于 5 的元素</span></span><br><span class="line">        <span class="keyword">var</span> filteredNumbers = numbers.Where(n =&gt; n &gt; <span class="number">5</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 遍历并打印筛选后的元素</span></span><br><span class="line">        <span class="keyword">foreach</span> (<span class="keyword">var</span> num <span class="keyword">in</span> filteredNumbers)</span><br><span class="line">        &#123;</span><br><span class="line">            Console.WriteLine(num);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h1 id="当然，以下是对您提供的ActionKit序列代码每行的详细注释和解释："><a href="#当然，以下是对您提供的ActionKit序列代码每行的详细注释和解释：" class="headerlink" title="当然，以下是对您提供的ActionKit序列代码每行的详细注释和解释："></a>当然，以下是对您提供的ActionKit序列代码每行的详细注释和解释：</h1><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 创建一个新的动作序列</span></span><br><span class="line">.Sequence()</span><br><span class="line">    <span class="comment">// 序列开始时的回调，禁用对象以优化性能或避免交互</span></span><br><span class="line">    .Callback(() =&gt; &#123; selfCache.enabled = <span class="literal">false</span>; &#125;)</span><br><span class="line">    <span class="comment">// 开始一个并行任务块</span></span><br><span class="line">    .Parallel(p =&gt; &#123;</span><br><span class="line">        <span class="comment">// 在并行任务中，使用Lerp从0平滑过渡到10，持续0.2秒，每次更新旋转Z轴</span></span><br><span class="line">        p.Lerp(<span class="number">0</span>, <span class="number">10</span>, <span class="number">0.2f</span>, (z) =&gt; &#123;</span><br><span class="line">            <span class="comment">// 旋转的操作，更新对象的局部欧拉角Z分量</span></span><br><span class="line">            self.transform.localEulerAngles =</span><br><span class="line">                selfCache.transform.localEulerAngles.Z(z);</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 向并行任务中添加另一个序列</span></span><br><span class="line">        p.Append(ActionKit.Sequence()</span><br><span class="line">            <span class="comment">// 先将缩放从0平滑过渡到1.25，持续0.1秒</span></span><br><span class="line">            .Lerp(<span class="number">0</span>, <span class="number">1.25f</span>, <span class="number">0.1f</span>, scale =&gt; &#123; selfCache.LocalScale(scale); &#125;)</span><br><span class="line">            <span class="comment">// 再将缩放从1.25平滑过渡到1，也持续0.1秒</span></span><br><span class="line">            .Lerp(<span class="number">1.25f</span>, <span class="number">1</span>, <span class="number">0.1f</span>, scale =&gt; &#123; selfCache.LocalScale(scale); &#125;)</span><br><span class="line">        );</span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="comment">// 第一个并行任务结束后的回调，重新启用对象</span></span><br><span class="line">    .Callback(() =&gt; &#123; selfCache.enabled = <span class="literal">true</span>; &#125;)</span><br><span class="line">    <span class="comment">// 开始第二个并行任务块</span></span><br><span class="line">    .Parallel(p =&gt; &#123;</span><br><span class="line">        <span class="comment">// 类似地，使用Lerp从10平滑过渡到0，更新旋转Z轴</span></span><br><span class="line">        p.Lerp(<span class="number">10</span>, <span class="number">0</span>, <span class="number">0.2f</span>, (z) =&gt; &#123;</span><br><span class="line">            self.transform.localEulerAngles =</span><br><span class="line">                selfCache.transform.localEulerAngles.Z(z);</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 向并行任务中添加与前面相同的缩放序列</span></span><br><span class="line">        p.Append(ActionKit.Sequence()</span><br><span class="line">            .Lerp(<span class="number">0</span>, <span class="number">1.25f</span>, <span class="number">0.1f</span>, scale =&gt; &#123; selfCache.LocalScale(scale); &#125;)</span><br><span class="line">            .Lerp(<span class="number">1.25f</span>, <span class="number">1</span>, <span class="number">0.1f</span>, scale =&gt; &#123; selfCache.LocalScale(scale); &#125;)</span><br><span class="line">        );</span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="comment">// 第二个并行任务结束后的回调，再次禁用对象</span></span><br><span class="line">    .Callback(() =&gt; &#123; selfCache.enabled = <span class="literal">false</span>; &#125;)</span><br><span class="line">    <span class="comment">// 使用Lerp从-180平滑过渡到0，更新旋转Z轴和缩放</span></span><br><span class="line">    .Lerp(<span class="number">-180</span>, <span class="number">0</span>, <span class="number">0.3f</span>, z =&gt; &#123;</span><br><span class="line">        <span class="comment">// 更新对象的局部欧拉角Z分量</span></span><br><span class="line">        selfCache.transform.localEulerAngles =</span><br><span class="line">            selfCache.transform.localEulerAngles.Z(z);</span><br><span class="line">        <span class="comment">// 根据旋转的绝对值调整缩放</span></span><br><span class="line">        selfCache.LocalScale(z.Abs() / <span class="number">180</span>);</span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="comment">// 开始执行整个序列，并在序列完成后销毁对象</span></span><br><span class="line">    .Start(<span class="keyword">this</span>, () =&gt; &#123;</span><br><span class="line">        <span class="comment">// 优雅地销毁游戏对象，可能包括停止协程、移除事件监听器等</span></span><br><span class="line">        selfCache.DestroyGameObjGracefully();</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure>
-
-<p>这段代码通过ActionKit库定义了一个复杂的动画序列，涉及对象的旋转和缩放。它首先禁用对象以避免在动画过程中发生不必要的交互，然后执行两个并行任务块，每个任务块都包含旋转和缩放的动画。第一个并行任务块完成后，对象被重新启用，接着执行第二个并行任务块。在所有动画完成后，对象再次被禁用，并执行一个额外的旋转和缩放动画。最后，当整个序列完成时，对象被优雅地销毁。</p>
-<p>注意，<code>selfCache</code>和<code>self</code>很可能是对相同游戏对象的不同引用，或者<code>selfCache</code>是一个封装了游戏对象及其行为的自定义类实例。此外，<code>Z(z)</code>和<code>LocalScale(scale)</code>很可能是扩展方法或自定义方法，用于简化对Unity Transform组件的操作。</p>
-<p>在您的代码中，您定义了几个静态的<code>BindableProperty</code>（尽管实际上您可能是想使用类似于Xamarin.Forms中的<code>BindableProperty</code>的概念，但在这里我假设您创建了一个自定义的泛型<code>BindableProperty</code>类），用于存储与简单剑技相关的配置值。不过，在最后一行代码中，您使用了一种简化的构造函数调用方式，这在C#中通常不是标准的。我将首先按照常规方式重写您的代码，然后解释可能的简化方式（尽管在C#中直接简化构造函数调用通常不是标准做法）。</p>
+<p>在这个例子中，<code>Where(n =&gt; n &gt; 5)</code> 调用会创建一个新的集合（实际上是一个延迟执行的查询），该集合包含所有大于5的元素。然后，我们使用<code>foreach</code>循环遍历并打印这些元素。</p>
+<h3 id="注意事项-1"><a href="#注意事项-1" class="headerlink" title="注意事项"></a>注意事项</h3><ul>
+<li><code>where()</code> 方法返回的集合是延迟执行的，这意味着它不会立即计算或生成结果。相反，它会在您遍历结果集时（例如，在<code>foreach</code>循环中）计算每个元素是否满足条件。</li>
+<li>您可以链式调用多个LINQ方法，例如，在<code>where()</code>之后使用<code>Select()</code>来转换元素，或者使用<code>OrderBy()</code>来对结果进行排序。</li>
+<li>虽然<code>where()</code>方法非常强大，但它并不会改变原始集合。如果您需要修改原始集合，您可能需要使用不同的方法（如<code>List&lt;T&gt;.RemoveAll()</code>）或在处理结果后手动更新原始集合。</li>
+<li>对于IQueryable<T>接口的实现（如Entity Framework中的数据库查询），<code>where()</code>方法允许您在数据库级别执行筛选，这可以提高性能并减少数据传输量。</li>
+</ul>
 
                 
             </div>
@@ -509,7 +483,7 @@ AB包（Asset Bundle）
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://hahlol.github.io/2024/02/03/QFramework/">http://hahlol.github.io/2024/02/03/QFramework/</a>
+                    <a href="http://hahlol.github.io/2024/09/06/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91C-%E7%AC%94%E8%AE%B0/">http://hahlol.github.io/2024/09/06/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91C-%E7%AC%94%E8%AE%B0/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -547,8 +521,12 @@ AB包（Asset Bundle）
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%B8%B8%E6%88%8F%E6%A1%86%E6%9E%B6/">
-                                    <span class="chip bg-color">游戏框架</span>
+                                <a href="/tags/C/">
+                                    <span class="chip bg-color">C#</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/">
+                                    <span class="chip bg-color">游戏开发日志</span>
                                 </a>
                             
                         </div>
@@ -627,17 +605,18 @@ AB包（Asset Bundle）
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2024/02/03/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88C-%EF%BC%89%E7%AC%AC%E4%B8%80%E8%8A%82/">
+                <a href="/2024/09/06/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91C-%E7%AC%94%E8%AE%B0/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="数据结构（C++）第一节">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="游戏开发C#笔记">
                         
-                        <span class="card-title">数据结构（C++）第一节</span>
+                        <span class="card-title">游戏开发C#笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -647,30 +626,27 @@ AB包（Asset Bundle）
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-02-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-09-06
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E9%87%8D%E5%AD%A6%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="post-category">
-                                    重学数据结构
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Li ChenYang
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
-                        <span class="chip bg-color">数据结构</span>
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C#</span>
                     </a>
                     
-                    <a href="/tags/C/">
-                        <span class="chip bg-color">C++</span>
+                    <a href="/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/">
+                        <span class="chip bg-color">游戏开发日志</span>
                     </a>
                     
                 </div>
@@ -684,13 +660,13 @@ AB包（Asset Bundle）
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/02/03/Markdowm%E7%9A%84%E5%9F%BA%E7%A1%80%E7%94%A8%E6%B3%95/">
+                <a href="/2024/09/05/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Markdown的使用">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="游戏开发日志">
                         
-                        <span class="card-title">Markdown的使用</span>
+                        <span class="card-title">游戏开发日志</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -701,12 +677,16 @@ AB包（Asset Bundle）
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-02-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-09-05
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Li ChenYang
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/" class="post-category">
+                                    游戏开发日志
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -714,8 +694,8 @@ AB包（Asset Bundle）
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/markdown/">
-                        <span class="chip bg-color">markdown</span>
+                    <a href="/tags/QFramework%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">QFramework笔记</span>
                     </a>
                     
                 </div>
